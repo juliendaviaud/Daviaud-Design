@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import ProjectDetails from "../Project-Details/ProjectDetails";
-import challengeVideo from "../../assets/vidéos/application-challenge.mp4";
+import challengeVideo from "../../assets/videos/application-challenge.mp4";
 import leftImg from "../../assets/images/app-challenge/left-img.png";
 import rightImg from "../../assets/images/app-challenge/right-img.png";
 

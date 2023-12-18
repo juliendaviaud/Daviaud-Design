@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./ModelScroll.css";
-import videoModel from "../../assets/vidéos/isocahedron-explosion.mp4"
+import videoModel from "../../assets/videos/isocahedron-explosion.mp4"
 
 const ModelScroll = () => {
   const videoRef = useRef(null);

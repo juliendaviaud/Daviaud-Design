@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import ProjectDetails from "../Project-Details/ProjectDetails";
-import qwesteoVideo from "../../assets/vidéos/qwesteo.mp4";
+import qwesteoVideo from "../../assets/videos/qwesteo.mp4";
 import leftImg from "../../assets/images/qwesteo/qwesteo-left-img.png";
 import rightImg from "../../assets/images/qwesteo/qwesteo-right-img.png";
 

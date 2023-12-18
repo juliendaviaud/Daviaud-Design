@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import ProjectDetails from "../Project-Details/ProjectDetails";
-import tristanMeliaVideo from "../../assets/vidéos/tristan-melia.mp4";
+import tristanMeliaVideo from "../../assets/videos/tristan-melia.mp4";
 import leftImg from "../../assets/images/tristan-melia/tristan-melia-left-img.png";
 import rightImg from "../../assets/images/tristan-melia/tristan-melia-right-img.png";
 
