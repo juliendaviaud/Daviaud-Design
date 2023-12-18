@@ -1,0 +1,43 @@
+.img-gallery-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.gallery-img {
+	cursor: pointer;
+}
+
+.gallery-img:hover {
+	
+}
+
+#lightbox {
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	display: none;
+}
+
+#lightbox.lightbox-active {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#lightbox img:first-child {
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	top: 30px;
+	right: 50px;
+	cursor: pointer;
+}
+
+.lightbox-image {
+	width: 1100px;
+}

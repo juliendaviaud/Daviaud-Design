@@ -1,0 +1,64 @@
+.project-link {
+	width: 90%;
+	max-width: 885px;
+}
+
+.project-link:hover {
+	width: 90%;
+	max-width: 985px;
+}
+
+.project-video-container {
+    height: 350px;
+	margin-bottom: 20px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+    border-radius: 20px;
+	transition: width 1s, height 1s;
+	border: 1px solid grey;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-challenge {
+	background-image: url(../../assets/images/application-challenge-mockup.png);
+}
+
+.tristan-melia {
+	background-image: url(../../assets/images/tristan-melia/tristan-melia-mockup.png);
+}
+
+.qwesteo {
+	background-image: url(../../assets/images/qwesteo/qwesteo-mockup.png);
+}
+
+.project-video-container:hover {
+	height: auto;
+	background-image: none;
+}
+
+.project-video-container video {
+	width: 100%;
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+.display-none {
+	display: none;
+}
+
+.display-block {
+	display: block;
+}
+
+/* @media not all and (hover: none) { */
+	/* .project-link {
+		pointer-events: none;
+	}
+
+	.project-video-container {
+		pointer-events: none;
+	} */
+/*   } */

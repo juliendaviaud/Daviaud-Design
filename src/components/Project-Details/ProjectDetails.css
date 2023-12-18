@@ -1,0 +1,296 @@
+.project-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pd-header {
+  width: 60%;
+  /* height: 100vh; */
+  margin-bottom: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-details-container {
+  color: #f9f9f9;
+}
+
+.pd-titles {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+}
+
+.pd-titles h1 {
+  font-family: "Rubik";
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.pd-titles {
+  font-size: 1.3rem;
+}
+
+.pd-header video {
+  /* width: 900px; */
+  border-radius: 10px;
+}
+
+/* Project Details Body */
+
+.pd-body {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Informations */
+
+.informations {
+  margin-bottom: 175px;
+}
+
+.information-container .title-and-line {
+  display: flex;
+  align-items: center;
+}
+
+.information-container hr {
+  margin: 0.5px 1em;
+  border: none;
+  border-bottom: dashed 1px #f9f9f9;
+}
+
+.information-container ul {
+  width: fit-content;
+  padding: 0 0.9rem;
+  padding-right: 0;
+  columns: 2 auto;
+  column-gap: 20px;
+}
+
+li {
+  width: fit-content;
+}
+
+.informations .title-container {
+  margin-bottom: 40px;
+}
+
+.client-container hr {
+  width: 10rem;
+}
+
+.technologies-container hr {
+  width: 6.6rem;
+}
+
+.postes-container hr {
+  width: 9.5rem;
+}
+
+.postes-container ul {
+  columns: 1 auto;
+}
+
+.postes-container ul li {
+  margin-right: 0;
+}
+
+.client-container,
+.technologies-container,
+.postes-container {
+  display: flex;
+  align-items: start;
+}
+
+.client-container,
+.technologies-container {
+  margin-bottom: 20px;
+}
+
+.client-container {
+  align-items: center;
+}
+
+/* Needs and Solution */
+
+.pd-img-and-text {
+  margin-bottom: 175px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pd-img-and-text .left-img,
+.right-img {
+  width: 45%;
+}
+
+.right-img img {
+  margin-left: auto;
+}
+
+.pd-title-and-text-container {
+  width: 45%;
+}
+
+.pd-img-and-text img {
+  width: 100%;
+  /* width: 295px; */
+}
+
+.pd-img-and-text .title-container {
+  margin-bottom: 24px;
+  display: flex;
+  align-items: start;
+}
+
+.pd-title-and-text-container p {
+  text-align: justify;
+}
+
+/* Photo Gallery */
+
+.pd-gallery {
+  width: 100%;
+  margin-bottom: 175px;
+}
+
+/* Responsive */
+
+/* Extra large screens, TV */
+
+@media screen and (min-width: 1201px) {
+}
+
+/* 1200 - 1400px */
+
+@media screen and (max-width: 1600px) {
+
+  .pd-header {
+    width: 75%;
+  }
+
+  .pd-body {
+    width: 60%;
+  }
+
+}
+
+/* Desktops, large screens */
+
+@media screen and /* (min-width: 1025px) and */ (max-width: 1200px) {
+
+  .pd-header {
+    width: 85%;
+  }
+
+  .pd-body {
+    width: 75%;
+  }
+
+}
+
+/* Small screens, laptops */
+
+@media screen and /* (min-width: 769px) and */ (max-width: 1024px) {
+
+  .colored-title {
+    font-size: 1.3rem;
+  }
+
+  .pd-titles h1 {
+    font-size: 1.8rem;
+  }
+
+  .pd-img-and-text {
+    flex-direction: column;
+  }
+
+  .pd-img-and-text .left-img, .right-img {
+    margin-bottom: 100px;
+    height: 60%;
+  }
+
+  .pd-title-and-text-container {
+    width: 60%;
+  }
+
+  .right-img {
+    order: 1;
+  }
+
+  .solution-text {
+    order: 2;
+  }
+
+}
+
+/* iPads, Tablets */
+
+@media screen and /* (min-width: 481px) and */ (max-width: 768px) {
+
+  .pd-header {
+    width: 90%;
+  }
+
+  .pd-body {
+    width: 80%;
+  }
+
+  .pd-img-and-text .left-img, .right-img {
+    margin-bottom: 100px;
+    height: 60%;
+  }
+
+  .pd-title-and-text-container {
+    width: 80%;
+  }
+
+  .client-container hr {
+    width: 7rem;
+  }
+  
+  .technologies-container hr {
+    width: 3.6rem;
+  }
+  
+  .postes-container hr {
+    width: 6.5rem;
+  }
+}
+
+/* Mobile devices */
+
+@media screen and (max-width: 481px) {
+
+  .colored-title {
+    font-size: 1rem;
+  }
+
+  .pd-titles h1 {
+    font-size: 1.4rem;
+  }
+
+  .information-container {
+    font-size: 0.8rem;
+  }
+
+  .client-container hr {
+    width: 4rem;
+  }
+  
+  .technologies-container hr {
+    width: 1.15rem;
+  }
+  
+  .postes-container hr {
+    width: 3.5rem;
+  }
+}
