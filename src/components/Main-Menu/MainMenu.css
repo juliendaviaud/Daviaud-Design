@@ -34,7 +34,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: #1f1f1f;
+	background-color: #1b1b1b;
 	z-index: 1001;
 	overflow-x: hidden;
 }

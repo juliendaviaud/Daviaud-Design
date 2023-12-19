@@ -11,7 +11,7 @@
 /* FIRST SECTION */
 
 .first-section {
-  height: 100vh;
+  height: 100svh;
   margin-bottom: 10.5rem;
   /* background-image: url(../../assets/images/landing-fs-black-waves.jpeg);
 	background-size: cover;
@@ -890,6 +890,11 @@
 /* Mobile devices */
 
 @media screen and (max-width: 550px) {
+
+  .social-networks a img {
+    height: 22px;
+  }
+
   .timeline .left .timeline-content,
   .timeline .right .timeline-content {
     margin-left: 4.5rem;
@@ -925,5 +930,19 @@
 
   .eighth-job::before {
     width: 126px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .fs-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .fs-container p {
+    font-size: 0.9rem;
+  }
+
+  .fs-container p span {
+    font-size: 1.5rem;
   }
 }
