@@ -58,7 +58,7 @@
 	} */
 /*   } */
 
-@media screen and (min-width: 1200px) {
+@media screen and (hover: hover) {
 	.project-video-container:hover {
 		height: auto;
 		background-image: none;
