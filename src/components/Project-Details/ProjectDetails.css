@@ -238,6 +238,7 @@ li {
 
   .pd-header {
     width: 90%;
+    margin-bottom: 150px;
   }
 
   .pd-body {
@@ -270,12 +271,16 @@ li {
 
 @media screen and (max-width: 481px) {
 
-  pd-titles .colored-title {
-    font-size: 1rem;
+  .pd-header .pd-titles .colored-title {
+    font-size: 1.2rem;
   }
 
   .pd-titles h1 {
     font-size: 1.4rem;
+  }
+
+  .pd-body {
+    width: 95%;
   }
 
   .information-container {

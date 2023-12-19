@@ -58,7 +58,7 @@
     width: unset;
   }
 
-  .colored-title {
+  .about-text-container .colored-title {
     font-size: 1.6rem;
   }
 }
