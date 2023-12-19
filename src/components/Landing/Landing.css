@@ -940,9 +940,15 @@
 @media screen and (max-width: 450px) {
   .fs-container h1 {
     font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .fs-container h1 span {
+    font-size: 1.7rem;
   }
 
   .fs-container p {
+    margin-top: 1rem;
     font-size: 0.9rem;
   }
 
@@ -956,5 +962,5 @@
 
   /* Timeline */
 
-  
+
 }
