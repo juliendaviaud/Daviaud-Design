@@ -51,17 +51,29 @@
   }
 
   .about-image {
-    margin-bottom: 20%;
+    margin-bottom: 4rem;
   }
 
   .about-text-container {
     width: unset;
+  }
+
+  .colored-title {
+    font-size: 1.6rem;
   }
 }
 
 /* iPads, Tablets */
 
 @media screen and /* (min-width: 481px) and */ (max-width: 768px) {
+
+  .about {
+    padding-top: 7rem;
+  }
+
+  .about-container {
+    width: 78%;
+  }
 
 	.about-image {
 		width: 55%;
@@ -72,7 +84,18 @@
 /* Mobile devices */
 
 @media screen and (max-width: 550px) {
+  .about {
+    height: auto;
+    margin-bottom: 6rem;
+  }
+
 	.about-image {
 		height: auto;
 	}
+}
+
+@media screen and (max-width: 450px) {
+  .about {
+    padding-top: 9rem;
+  }
 }

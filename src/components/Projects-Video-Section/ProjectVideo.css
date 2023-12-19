@@ -34,11 +34,6 @@
 	background-image: url(../../assets/images/qwesteo/qwesteo-mockup.png);
 }
 
-.project-video-container:hover {
-	height: auto;
-	background-image: none;
-}
-
 .project-video-container video {
 	width: 100%;
 	border-radius: 20px;
@@ -62,3 +57,26 @@
 		pointer-events: none;
 	} */
 /*   } */
+
+@media screen and (min-width: 1200px) {
+	.project-video-container:hover {
+		height: auto;
+		background-image: none;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.project-video-container {
+		display: block !important;
+	}
+
+	.project-video-container:hover {
+
+	}
+
+	.project-link:hover {
+		width: 90%;
+		max-width: 985px;
+		height: 100%;
+	}
+}

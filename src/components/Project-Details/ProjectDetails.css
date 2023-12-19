@@ -201,7 +201,7 @@ li {
 
 @media screen and /* (min-width: 769px) and */ (max-width: 1024px) {
 
-  .colored-title {
+  pd-titles .colored-title {
     font-size: 1.3rem;
   }
 
@@ -270,7 +270,7 @@ li {
 
 @media screen and (max-width: 481px) {
 
-  .colored-title {
+  pd-titles .colored-title {
     font-size: 1rem;
   }
 
