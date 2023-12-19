@@ -68,6 +68,12 @@
 	
 }
 
+@media screen and (max-width: 768px) {
+	#main-logo {
+		width: 42px;
+	}
+}
+
 @media screen and (max-width: 650px) {
 	.nav-links {
 		width: 100%;

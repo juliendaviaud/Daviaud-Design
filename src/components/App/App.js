@@ -9,9 +9,13 @@ import ErrorPage from "../Error-Page/ErrorPage";
 import PQwesteo from "../P-Qwesteo/PQwesteo";
 import ScrollToTop from "../Scroll-To-Top/ScrollToTop";
 import { Link as LinkScroll } from "react-scroll";
+import { Fragment } from "react";
+import PreLoader from "../Pre-Loader/PreLoader";
 
 function App() {
   return (
+    <Fragment>
+      {/* <PreLoader /> */}
     <Router className="App">
       {/* <MainMenu /> */}
       <ScrollToTop />
@@ -24,6 +28,7 @@ function App() {
         <Route path="*" element={<ErrorPage/>} />
       </Routes>
     </Router>
+    </Fragment>
   );
 }
 

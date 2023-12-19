@@ -35,7 +35,8 @@
 }
 
 .isocahedron-container {
-  width: auto;
+  width: 288px;
+  height: 288px;
 }
 
 .fs-text-and-button-container {
@@ -46,7 +47,7 @@
 }
 
 .fs-text-container {
-  margin-top: 56px;
+  margin-top: 10px;
   text-align: center;
   color: #f9f9f9;
 }
@@ -785,6 +786,11 @@
 
   .fs-center-container {
     margin-top: 0;
+  }
+
+  .isocahedron-container {
+    height: 148px;
+    width: 148px;
   }
 
   .fs-text-container h1 {
