@@ -206,6 +206,10 @@
   color: #f9f9f9;
 }
 
+.fos-container .title-container p {
+  margin-top: 20px;
+}
+
 .colored-title {
   width: fit-content;
   text-align: center;

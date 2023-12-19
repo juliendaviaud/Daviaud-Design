@@ -191,6 +191,7 @@ const Landing = () => {
             <div className="title-container">
               <h3 className="colored-title">Chapter 2</h3>
               <h2>Projects</h2>
+              <p>click on the projects to see more details about them</p>
             </div>
             <ProjectVideo {...appChallengeProps} />
             <ProjectVideo {...tristanMeliaProps} />
