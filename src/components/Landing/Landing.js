@@ -195,7 +195,7 @@ const Landing = () => {
             <ProjectVideo {...appChallengeProps} />
             <ProjectVideo {...tristanMeliaProps} />
             <ProjectVideo {...qwesteoProps} />
-            <a className="colored-title first-react-project" href="https://marvel-quiz-e119f.web.app" target="_blank">Link to see my first Reactjs project</a>
+            <a className="first-react-project" href="https://marvel-quiz-e119f.web.app" target="_blank">Link to see my first Reactjs project</a>
             {/* <ProjectVideo /> */}
             {/* <div className="project"></div>
           <div className="project"></div>

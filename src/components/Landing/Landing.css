@@ -292,6 +292,8 @@
   margin-top: 2rem;
   /* padding: 0 1rem; */
   font-size: 1.2rem;
+  color: #f9f9f9;
+  text-decoration: underline;
   /* text-decoration: underline;
   text-decoration-color: #6a0cfb; */
 }
@@ -824,7 +826,7 @@
   }
 
   .skill-text-container {
-    padding: 1rem 0;
+    padding: 1.5rem 0;
   }
 
   /* Timeline */
@@ -962,5 +964,44 @@
 
   /* Timeline */
 
+  .timeline .left .timeline-content, .timeline .right .timeline-content {
+    margin-left: 3rem;
+  }
+
+  .timeline-content {
+    width: 275px;
+  }
+
+  .first-job::before {
+    width: 135px;
+  }
+
+  .second-job::before {
+    width: 140px;
+  }
+
+  .third-job::before {
+    width: 126px;
+  }
+
+  .fourth-job::before {
+    width: 104px;
+  }
+
+  .fifth-job::before {
+    width: 182px;
+  }
+
+  .sixth-job::before {
+    width: 126px;
+  }
+
+  .seventh-job::before {
+    width: 140px;
+  }
+
+  .eighth-job::before {
+    width: 104px;
+  }
 
 }
