@@ -202,12 +202,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   font-family: "Helvetica Neue";
   color: #f9f9f9;
 }
 
 .fos-container .title-container p {
   margin-top: 20px;
+  line-height: 0.7rem;
+}
+
+.title-container p br {
+  display: none;
 }
 
 .colored-title {
@@ -790,6 +796,14 @@
 @media screen and /* (min-width: 481px) and */ (max-width: 768px) {
   /* Landing section */
 
+  #reliability {
+    margin-bottom: 12rem;
+  }
+  
+  .space-between-sections {
+    margin-bottom: 16rem;
+  }
+
   .fs-center-container {
     margin-top: 0;
   }
@@ -818,6 +832,12 @@
 
   .fs-text-container p {
     line-height: 1.3rem;
+  }
+
+  /* Projects */
+
+  .title-container p br {
+    display: inline;
   }
 
   /* Skills */
@@ -966,7 +986,17 @@
     font-size: 0.9rem;
   }
 
+  /* Skills container */
+
+  .skills-container {
+    width: 90%;
+  }
+
   /* Timeline */
+
+  #timeline {
+    margin-bottom: 18rem;
+  }
 
   .timeline .left .timeline-content, .timeline .right .timeline-content {
     margin-left: 3rem;

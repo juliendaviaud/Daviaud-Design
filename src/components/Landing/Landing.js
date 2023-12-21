@@ -198,7 +198,7 @@ const Landing = () => {
               <h3 className="colored-title">Chapitre 2</h3>
               <h2>Projets</h2>
               <p>
-                Cliquez sur les projets, pour connaitre plus de détails les
+                Cliquez sur les projets, pour connaitre<br /><br />plus de détails les
                 concernants
               </p>
             </div>
