@@ -40,19 +40,19 @@ const Landing = () => {
   };
 
   const skills = [
-    "Site internet",
-    "Logo",
-    "Bannière",
-    "Application mobile",
+    "Sites internet",
+    "Logos",
+    "Bannières",
+    "Applications mobile",
     "Branding",
-    "infograpfie",
-    "Cartes de visites",
+    "infographie",
+    "Cartes de visite",
     "UX/UI",
-    "Postères",
+    "Affiches",
     "Publicités en ligne",
     "Brochures",
     "Icônes",
-    "Montage vidéo",
+    "Montages vidéo",
     "Stands",
     "Réseaux sociaux",
     "Html",
@@ -165,27 +165,27 @@ const Landing = () => {
                 <img src={heart} alt="Gradient heart image" />
                 <h4>Bonne relation</h4>
                 <p>
-                  N’ayez plus peur de la personne avec qui vous travaillez. Je
-                  vous garantie une excellente communication, transparente,
-                  honnête, fluide, efficace et réactive.
+                  Les relations humaines sont très importantes pour moi. Je vous
+                  garantie une excellente communication, honnête, fluide,
+                  efficace et réactive.
                 </p>
               </div>
               <div className="argument-container">
                 <img src={sparks} alt="Gradient heart image" />
                 <h4>Qualité</h4>
                 <p>
-                  La satisfaction de mes clients est la chose la plus importante
-                  pour moi.Un design, un site internet que vous aimerez à coup
-                  sûr et dont vous serez fier.
+                  La satisfaction de mes clients est fondamentale pour moi. Je
+                  vous promet un design, un site internet que vous aimerez à
+                  coup sûr et dont vous serez fier.
                 </p>
               </div>
               <div className="argument-container">
                 <img src={fire} alt="Gradient heart image" />
                 <h4>Passion</h4>
                 <p>
-                  {/* Mes passions sont le design et le développement.  */}Travaillez
-                  avec un designer et un développeur en une seule personne.
-                  Ensemble, faisons de votre projet un succès.
+                  {/* Mes passions sont le design et le développement.  */}
+                  Travaillez avec un designer et un développeur en une seule
+                  personne. Ensemble, faisons de votre projet un succès.
                 </p>
               </div>
             </div>
@@ -198,8 +198,9 @@ const Landing = () => {
               <h3 className="colored-title">Chapitre 2</h3>
               <h2>Projets</h2>
               <p>
-                Cliquez sur les projets, pour connaitre<br /><br />plus de détails les
-                concernants
+                Cliquez sur les projets, pour connaitre
+                <br />
+                <br /> plus de détails les concernants
               </p>
             </div>
             <ProjectVideo {...appChallengeProps} />

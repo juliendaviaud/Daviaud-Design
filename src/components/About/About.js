@@ -29,8 +29,10 @@ const About = () => {
               labore et dolore magna aliqua. Ut enim ad minim veniam, quis
               nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
               consequat. */}
-              Titulaire d’un bac+5 Manager de projets informatique de l’école
-              Keyce Informatique, passionné d’informatique et de design je suis
+              Designer & Développeur web front-end
+              <br></br>
+              Titulaire d’un bac+5 "Manager de projets informatiques" de l’école
+              Keyce Informatique, passionné d’informatique et de design, je suis
               également très sensible aux relations humaines et à la
               communication. Je me suis donc tout naturellement orienté vers le
               domaine du web et du e-marketing.
