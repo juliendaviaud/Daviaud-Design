@@ -69,7 +69,7 @@ const MainMenu = ({isAbsolute}) => {
               <Link to="/#timeline" onClick={openCloseBurgerMenu}>Timeline</Link>
             </li>
             <li>
-              <Link to="/about" onClick={openCloseBurgerMenu}>About me</Link>
+              <Link to="/about" onClick={openCloseBurgerMenu}>À propos de moi</Link>
             </li>
             <li>
               <Link to="/#contact" onClick={openCloseBurgerMenu}>Contact</Link>
