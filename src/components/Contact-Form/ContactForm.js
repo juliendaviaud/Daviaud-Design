@@ -57,32 +57,31 @@ const ContactForm = () => {
       <input
         type="text"
         name="name"
-        placeholder="Name"
+        placeholder="Nom"
         onChange={handleChange}
         value={data.name}
       />
       <input
         type="email"
         name="email"
-        placeholder="Email address"
+        placeholder="Adresse e-mail"
         onChange={handleChange}
         value={data.email}
       />
       <input
         type="phone"
         name="phone"
-        placeholder="Phone number"
+        placeholder="Numéro de téléphonne"
         onChange={handleChange}
         value={data.phone}
       />
       <p ref={validatedMessage} className="validated-message display-none">
-      Information well sent. <br />I will get back to you as soon as possible
-        time limit
+      Informations envoyées. <br />Je vous remercie, je reviendrais vers vous dans les plus brefs délais.
       </p>
 	  <p ref={errorMessage} className="error-message display-none">
-    There appears to be an error with the information you provided. <br />Try Again.
+    Il semble qu'il y ait une erreur dans les informations que vous avez fournis.<br />Veuillez réessayer.
       </p>
-      <button className="gradient-button">Be recontacted</button>
+      <button className="gradient-button">Être recontacté</button>
     </form>
   );
 };

@@ -109,7 +109,7 @@ const LandingPageNavigation = () => {
         duration={500}
       >{/* {anchors[activeDot + 1].key} */}
       
-        NEXT
+        SUIVANT
       </NavigationLinkScroll>
       <div className="navigation-dots">
         <ul>

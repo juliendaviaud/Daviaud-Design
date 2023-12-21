@@ -6,37 +6,45 @@ import rightImg from "../../assets/images/qwesteo/qwesteo-right-img.png";
 
 const PQwesteo = () => {
   const needsText =
-    "Qwesteo is a company that enables its customers to obtain feedback and opinions from their own customers in their stores, via satisfaction terminals placed specifically at the checkout. \n \n Qwesteo has developed a web application, as well as a mobile application enabling their users to consult their customers' stats and opinions wherever they like. \n \n During our first interview, they told me about their need to improve and optimize the design and UX/UI of their products. Interested in my dual skills in design and web development, they asked me to join their team. I accepted.";
+    "Qwesteo est une entreprise permettant à leurs clients, d’obtenir des retours et des avis de leurs propres clients dans leurs magasins par l’intermédiaires de bornes, placées spécifiquement en caisse. \n \n Qwesteo a développé une application web, ainsi qu’une application mobile permettant à leurs utilisateurs de consulter les stats et les avis de leurs clients partout où ils le souhaitent. Durant notre première entrevue, ils m’ont fait part de leur besoin d’amélioration et d’optimisation des design et de l’UX/UI de leurs produits. Intéressés par ma double compétence en design et en développement web, ils m’ont proposé de rejoindre leurs équipes. Proposition que j’accepta.";
 
-	const solutionText =
-    "The first project I worked on was the Qwesteo mobile application. I was able to propose a new, cleaner and more modern design for this application. Qwesteo gave me the opportunity to make new proposals for new functionalities to be implemented for this application. I changed all the icons, the main colors (more pastel and fashionable), and the application's UX/UI. \n \n My second project was to design a new website for the brand. The previous one had an aging design. As the brand's logo was reused on all communication media, but also directly on the kiosks, it was important to keep it as it was. For me, not only the website, but also all media representing the Qwesteo brand had to adopt the logo's aesthetic. With this in mind, I decided to create a reminder of the logo, using gradations of blue throughout the site. A reminder of the logo will also be present in the form of double circles (one gray and one with a blue gradient), echoing the letter \"Q\" in the logo. \n \n Qwesteo has 3 sub-branches, each reflecting a specific business sector (retail, service and healthcare). I decided to associate colors and a blue gradient with each sector, with the aim of differentiating each branch from the others, while maintaining overall cohesion and coherence. \n \n I then worked on the design and development of new customer reports. Each design project was followed by a development phase (code) to implement the various projects. Having the opportunity to recreate an entire brand image for the whole company was really interesting and exciting.";
+  const solutionText =
+    'Le premier projet sur lequel je travailla fut l’application mobile Qwesteo. J’ai ainsi pu proposer un nouveau design plus épuré et moderne à cette application. Qwesteo m’a permis de faire de nouvelles propositions au sujets de nouvelles fonctionnalités à mettre en place pour cette application. J’ai changé l’intégralité des icônes, les couleurs principales (couleurs plus pastel et à la mode), ainsi que l’UX/UI de l’application. \n \n Mon second projet, fut de réaliser seul, un nouveau site internet pour la marque. Le précédent possédant un design vieillissant. Le logo de la marque étant réutilisé sur tous les supports de communication, mais également directement sur les bornes, il était important de le garder tel quel. Pour moi, le site internet, mais également tous les supports représentant la marque Qwesteo devaient reprendre l’esthétisme du logo. C’est dans cette optique que j’ai décidé de faire un rappel à ce logo en utilisant des dégradés de bleu dans tout le site. Un rappel au logo sera également présent sous la forme de double cercles (un gris et un avec un dégradé bleu), faisant écho à la lettre "Q" du logo. \n \n Qwesteo possède 3 sous-branches, chacune à l’image d’un certain secteur d’activité (commerce, service et santé). J’ai décidé d’associer à chaque secteur, des couleurs et un dégradé en variation de bleu, dans le but de différencier chaque branche des autres, tout en conservant une cohésion et une cohérence globale. \n \n J’ai, par la suite, travaillé sur le design et le développement de nouveau rapports à destination des clients. Chaque projet de design était suivi d’une phase de développement (code) pour réaliser les différents projets. Avoir eu l’occasion de recréer tout une image de marque pour toute l’entreprise a été réellement intéressant et passionnant.';
 
-	const photos = [
-		"../../assets/images/app-challenge/image-1.jpg",
-		"../../assets/images/app-challenge/image-1.jpg",
-		"../../assets/images/app-challenge/image-1.jpg",
-		"../../assets/images/app-challenge/image-1.jpg",
-		"../../assets/images/app-challenge/image-1.jpg",
-		"../../assets/images/app-challenge/image-1.jpg",
-		"../../assets/images/app-challenge/image-1.jpg",
-		"../../assets/images/app-challenge/image-1.jpg",
-		"../../assets/images/app-challenge/image-1.jpg",
-		"../../assets/images/app-challenge/image-1.jpg",
-	  ];
+  const photos = [
+    "../../assets/images/app-challenge/image-1.jpg",
+    "../../assets/images/app-challenge/image-1.jpg",
+    "../../assets/images/app-challenge/image-1.jpg",
+    "../../assets/images/app-challenge/image-1.jpg",
+    "../../assets/images/app-challenge/image-1.jpg",
+    "../../assets/images/app-challenge/image-1.jpg",
+    "../../assets/images/app-challenge/image-1.jpg",
+    "../../assets/images/app-challenge/image-1.jpg",
+    "../../assets/images/app-challenge/image-1.jpg",
+    "../../assets/images/app-challenge/image-1.jpg",
+  ];
 
-  const childProps = { 
-		coloredMainTitle: "Realized for Qwesteo",
-		mainTitle: "Qwesteo products",
-		presentationVideo: qwesteoVideo,
-		clientName: "Qwesteo",
-		technologies: ["Figma", "Photoshop", "Symfony" ,"Html", "Css", "Javascript", "Git"],
-		jobs: ["Designer", "Développeur Front-end", "Développeur Back-end"],
-		needsImage: leftImg,
-		needs: needsText,
-		solutionImage: rightImg,
-		solution: solutionText,
-		photos: photos
-	 };
+  const childProps = {
+    coloredMainTitle: "Réalisé pour Qwesteo",
+    mainTitle: "Produits Qwesteo",
+    presentationVideo: qwesteoVideo,
+    clientName: "Qwesteo",
+    technologies: [
+      "Figma",
+      "Photoshop",
+      "Symfony",
+      "Html",
+      "Css",
+      "Javascript",
+      "Git",
+    ],
+    jobs: ["Designer", "Développeur Front-end", "Développeur Back-end"],
+    needsImage: leftImg,
+    needs: needsText,
+    solutionImage: rightImg,
+    solution: solutionText,
+    photos: photos,
+  };
 
   return (
     <Fragment>

@@ -94,7 +94,7 @@ const ProjectDetails = ({
           <div className="pd-body">
             <div className="informations">
               <div className="title-container">
-                <h3 className="colored-title">Chapter 1</h3>
+                <h3 className="colored-title">Chapitre 1</h3>
                 <h2>Informations</h2>
               </div>
               <div className="information-container">
@@ -140,8 +140,8 @@ const ProjectDetails = ({
               </div>
               <div className="pd-title-and-text-container">
                 <div className="title-container">
-                  <h3 className="colored-title">Chapter 2</h3>
-                  <h2>Needs</h2>
+                  <h3 className="colored-title">Chapitre 2</h3>
+                  <h2>Besoins</h2>
                 </div>
                 <p>{addLineBreak(needs)}</p>
               </div>
@@ -149,7 +149,7 @@ const ProjectDetails = ({
             <div className="pd-img-and-text">
               <div className="pd-title-and-text-container solution-text">
                 <div className="title-container">
-                  <h3 className="colored-title">Chapter 3</h3>
+                  <h3 className="colored-title">Chapitre 3</h3>
                   <h2>Solutions</h2>
                 </div>
                 <p>{addLineBreak(solution)}</p>

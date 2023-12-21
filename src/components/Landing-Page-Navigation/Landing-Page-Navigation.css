@@ -1,6 +1,6 @@
 .landing-page-navigation {
 	top: calc(50vh - 64px);
-    left: 50px;
+    left: 38px;
     position: fixed;
 	z-index: 1000;
     display: flex;
@@ -9,7 +9,7 @@
     justify-content: center;
     font-family: "Poppins";
     color: #f9f9f9;
-    height: 180px;
+    height: 195px;
 }
 
 .navigation-dots {
@@ -47,6 +47,7 @@ ul:last-child {
 	display: block;
 	font-size: 1rem;
 	color: #f9f9f9;
+	cursor: pointer;
 }
 
 /* Responsive */
