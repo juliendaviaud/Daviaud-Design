@@ -166,7 +166,7 @@ const Landing = () => {
                 <h4>Bonne relation</h4>
                 <p>
                   Les relations humaines sont très importantes pour moi. Je vous
-                  garantie une excellente communication, honnête, fluide,
+                  garanti une excellente communication, honnête, fluide,
                   efficace et réactive.
                 </p>
               </div>
