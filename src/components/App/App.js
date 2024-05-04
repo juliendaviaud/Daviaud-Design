@@ -9,8 +9,7 @@ import ErrorPage from "../Error-Page/ErrorPage";
 import PQwesteo from "../P-Qwesteo/PQwesteo";
 import ScrollToTop from "../Scroll-To-Top/ScrollToTop";
 import { Link as LinkScroll } from "react-scroll";
-import { Fragment } from "react";
-import PreLoader from "../Pre-Loader/PreLoader";
+import { Fragment, useState } from "react";
 
 function App() {
   return (

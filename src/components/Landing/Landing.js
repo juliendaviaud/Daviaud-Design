@@ -16,6 +16,7 @@ import qwesteoVideo from "../../assets/videos/qwesteo.mp4";
 import MainMenu from "../Main-Menu/MainMenu";
 import ContactForm from "../Contact-Form/ContactForm";
 import { Link as LinkScroll } from "react-scroll";
+import PreLoader from "../Pre-Loader/PreLoader";
 
 const Landing = () => {
   /* const [loaded, setLoaded] = useState(null);
@@ -23,6 +24,17 @@ const Landing = () => {
       useEffect(()=>{
         setLoaded(true);
       }, []); */
+
+  const [isLoaded, setIsLoaded] = useState(true);
+
+  const handleLoading = () => {
+    setIsLoaded(false);
+  };
+
+  useEffect(() => {
+    window.addEventListener("load", handleLoading);
+    return () => window.removeEventListener("load", handleLoading);
+  }, []);
 
   const appChallengeProps = {
     projectName: "app-challenge",
@@ -99,7 +111,7 @@ const Landing = () => {
 		)
 	}) */
 
-  return (
+  return /* isLoaded ?  */(
     <Fragment>
       <MainMenu isAbsolute={true} />
       <div className="landing-page">
@@ -206,12 +218,21 @@ const Landing = () => {
             <ProjectVideo {...appChallengeProps} />
             <ProjectVideo {...tristanMeliaProps} />
             <ProjectVideo {...qwesteoProps} />
+
+            <a
+              className="first-react-project"
+              href="https://messenger-ab7de.web.app"
+              target="_blank"
+            >
+              Lien vers mon troisième projet React js: <br className="saut-de-ligne"></br>Sunrise Messenger
+            </a>
+
             <a
               className="first-react-project"
               href="https://marvel-quiz-e119f.web.app"
               target="_blank"
             >
-              Lien vers mon premier projet React js
+              Lien vers mon premier projet React js: <br className="saut-de-ligne"></br>Marvel Quiz
             </a>
             {/* <ProjectVideo /> */}
             {/* <div className="project"></div>
@@ -384,7 +405,9 @@ const Landing = () => {
         </div>
       </div>
     </Fragment>
-  );
+  )/*  : (
+    <PreLoader/>
+  ) */;
 };
 
 export default Landing;

@@ -308,6 +308,10 @@
   text-decoration-color: #6a0cfb; */
 }
 
+.saut-de-ligne {
+  display: none;
+}
+
 /* .first-react-project::after {
   background: linear-gradient(98deg, #6a0cfb 4.47%, #ea2d45 92.33%);
   bottom: 0;
@@ -916,6 +920,14 @@
 /* Mobile devices */
 
 @media screen and (max-width: 550px) {
+
+  .first-react-project {
+    text-align: center;
+  }
+
+  .saut-de-ligne {
+    display: inline;
+  }
 
   .social-networks a img {
     height: 22px;
