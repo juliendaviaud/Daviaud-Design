@@ -221,10 +221,26 @@ const Landing = () => {
 
             <a
               className="first-react-project"
+              href="https://weather-app-julien-daviaud.netlify.app"
+              target="_blank"
+            >
+              Lien vers mon cinquième projet React js: <br className="saut-de-ligne"></br>Weather map
+            </a>
+
+            <a
+              className="first-react-project"
+              href="https://to-do-list-daviaud-design.netlify.app"
+              target="_blank"
+            >
+              Lien vers mon quatrième projet React js: <br className="saut-de-ligne"></br>To-do-list
+            </a>
+
+            <a
+              className="first-react-project"
               href="https://messenger-ab7de.web.app"
               target="_blank"
             >
-              Lien vers mon troisième projet React js: <br className="saut-de-ligne"></br>Sunrise Messenger
+              Lien vers mon troisième projet React js: <br className="saut-de-ligne"></br>Sunrise Messenger (uniquement sur ordinateur)
             </a>
 
             <a
