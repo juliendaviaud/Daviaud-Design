@@ -111,8 +111,8 @@ const Landing = () => {
 		)
 	}) */
 
-  return /* isLoaded ?  */(
-    <Fragment>
+  return (
+    /* isLoaded ?  */ <Fragment>
       <MainMenu isAbsolute={true} />
       <div className="landing-page">
         <div id="landing" className="first-section">
@@ -221,10 +221,20 @@ const Landing = () => {
 
             <a
               className="first-react-project"
+              href="https://loup-garou-derniere-nuit.netlify.app"
+              target="_blank"
+            >
+              Lien vers mon sixième projet React js:{" "}
+              <br className="saut-de-ligne"></br>Loup-garou Dernière nuit
+            </a>
+
+            <a
+              className="first-react-project"
               href="https://weather-app-julien-daviaud.netlify.app"
               target="_blank"
             >
-              Lien vers mon cinquième projet React js: <br className="saut-de-ligne"></br>Weather map
+              Lien vers mon cinquième projet React js:{" "}
+              <br className="saut-de-ligne"></br>Weather map
             </a>
 
             <a
@@ -232,7 +242,8 @@ const Landing = () => {
               href="https://to-do-list-daviaud-design.netlify.app"
               target="_blank"
             >
-              Lien vers mon quatrième projet React js: <br className="saut-de-ligne"></br>To-do-list
+              Lien vers mon quatrième projet React js:{" "}
+              <br className="saut-de-ligne"></br>To-do-list
             </a>
 
             <a
@@ -240,7 +251,9 @@ const Landing = () => {
               href="https://messenger-ab7de.web.app"
               target="_blank"
             >
-              Lien vers mon troisième projet React js: <br className="saut-de-ligne"></br>Sunrise Messenger (uniquement sur ordinateur)
+              Lien vers mon troisième projet React js:{" "}
+              <br className="saut-de-ligne"></br>Sunrise Messenger (uniquement
+              sur ordinateur)
             </a>
 
             <a
@@ -248,7 +261,8 @@ const Landing = () => {
               href="https://marvel-quiz-e119f.web.app"
               target="_blank"
             >
-              Lien vers mon premier projet React js: <br className="saut-de-ligne"></br>Marvel Quiz
+              Lien vers mon premier projet React js:{" "}
+              <br className="saut-de-ligne"></br>Marvel Quiz
             </a>
             {/* <ProjectVideo /> */}
             {/* <div className="project"></div>
@@ -420,10 +434,10 @@ const Landing = () => {
           </div>
         </div>
       </div>
-    </Fragment>
-  )/*  : (
+    </Fragment> /*  : (
     <PreLoader/>
-  ) */;
+  ) */
+  );
 };
 
 export default Landing;
