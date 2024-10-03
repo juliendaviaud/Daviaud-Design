@@ -304,13 +304,13 @@ const Landing = () => {
               <div className="container right second-job">
                 <div className="timeline-content">
                   <h4>Freelance</h4>
-                  <h5>4 mois - 2021-2022</h5>
+                  <h5>2 ans - 2021-2022</h5>
                   <p className="job-title">Designer UX/UI & Développeur web</p>
                   <h5 className="mobile-dates">4 mois - 2021-2022</h5>
                   <p>
-                    Création d'un site internet pour une psychologue, un
-                    pianiste professionnel et un site internet dans le monde de
-                    l'aéronautique.
+                    Création de plusieurs sites internet. (Dont un pour une psychologue, un
+                    pianiste professionnel, un dans le monde de
+                    l'aéronautique, etc.)
                   </p>
                 </div>
               </div>
