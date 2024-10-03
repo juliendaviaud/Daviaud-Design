@@ -219,7 +219,7 @@ const Landing = () => {
             <ProjectVideo {...tristanMeliaProps} />
             <ProjectVideo {...qwesteoProps} />
 
-            <a
+            {/* <a
               className="first-react-project"
               href="https://loup-garou-derniere-nuit.netlify.app"
               target="_blank"
@@ -263,7 +263,7 @@ const Landing = () => {
             >
               Lien vers mon premier projet React js:{" "}
               <br className="saut-de-ligne"></br>Marvel Quiz
-            </a>
+            </a> */}
             {/* <ProjectVideo /> */}
             {/* <div className="project"></div>
           <div className="project"></div>
