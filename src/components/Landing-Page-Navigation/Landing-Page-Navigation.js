@@ -7,8 +7,8 @@ const LandingPageNavigation = () => {
     "#landing",
     "#reliability",
     "#projects",
+    "#pricesPacks",
     "#skills",
-    "#timeline",
     "#contact",
   ]);
   const [activeDot, setActiveDot] = useState(0);
@@ -39,13 +39,13 @@ const LandingPageNavigation = () => {
     },
     {
       id: 3,
-      name: "Skills",
-      key: "skills",
+      name: "Prices Packs",
+      key: "pricesPacks",
     },
     {
       id: 4,
-      name: "Timeline",
-      key: "timeline",
+      name: "Skills",
+      key: "skills",
     },
     {
       id: 5,

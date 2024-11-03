@@ -10,6 +10,7 @@ import PQwesteo from "../P-Qwesteo/PQwesteo";
 import ScrollToTop from "../Scroll-To-Top/ScrollToTop";
 import { Link as LinkScroll } from "react-scroll";
 import { Fragment, useState } from "react";
+import PreDevis from "../Pre-devis/PreDevis";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route exact path="/app-challenge" element={<PAppChallenge />} />
         <Route exact path="/tristan-melia" element={<PTristanMelia />} />
         <Route exact path="/qwesteo" element={<PQwesteo />} />
+        <Route exact path="/pre-devis" element={<PreDevis />} />
         <Route path="*" element={<ErrorPage/>} />
       </Routes>
     </Router>

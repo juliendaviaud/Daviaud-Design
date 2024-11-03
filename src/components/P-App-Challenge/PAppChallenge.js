@@ -25,7 +25,7 @@ const PAppChallenge = () => {
   ];
 
   const childProps = {
-    coloredMainTitle: "Application développée pour Spie",
+    coloredMainTitle: "Développée pour Spie",
     mainTitle: "Application Challenge",
     presentationVideo: challengeVideo,
     clientName: "Spie",

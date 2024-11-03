@@ -17,6 +17,7 @@ import MainMenu from "../Main-Menu/MainMenu";
 import ContactForm from "../Contact-Form/ContactForm";
 import { Link as LinkScroll } from "react-scroll";
 import PreLoader from "../Pre-Loader/PreLoader";
+import Prices from "../Prices/Prices";
 
 const Landing = () => {
   /* const [loaded, setLoaded] = useState(null);
@@ -271,16 +272,26 @@ const Landing = () => {
           </div>
         </div>
         {/* } */}
-        <div id="skills" className="seventh-section space-between-sections">
+        <div id="pricesPacks" className="fifth-section space-between-sections">
           <div className="ss-container">
             <div className="title-container">
               <h3 className="colored-title">Chapitre 3</h3>
+              <h2>Packs développement de site web</h2>
+            </div>
+            <Prices />
+          </div>
+        </div>
+
+        <div id="skills" className="seventh-section space-between-sections">
+          <div className="ss-container">
+            <div className="title-container">
+              <h3 className="colored-title">Chapitre 4</h3>
               <h2>Compétences</h2>
             </div>
             <div className="skills-container">{displaySkills}</div>
           </div>
         </div>
-        <div id="timeline" className="eighth-section space-between-sections">
+        {/* <div id="timeline" className="eighth-section space-between-sections">
           <div className="es-container">
             <div className="title-container">
               <h3 className="colored-title">Chapitre 4</h3>
@@ -288,7 +299,7 @@ const Landing = () => {
             </div>
             <div className="timeline">
               <div
-                className="container left first-job" /* {`container ${isMobile ? "right" : "left"} first-job`} */ /* "container left first-job" */
+                className="container left first-job"
               >
                 <div className="timeline-content">
                   <h4>Qwesteo</h4>
@@ -308,8 +319,8 @@ const Landing = () => {
                   <p className="job-title">Designer UX/UI & Développeur web</p>
                   <h5 className="mobile-dates">4 mois - 2021-2022</h5>
                   <p>
-                    Création de plusieurs sites internet. (Dont un pour une psychologue, un
-                    pianiste professionnel, un dans le monde de
+                    Création de plusieurs sites internet. (Dont un pour une
+                    psychologue, un pianiste professionnel, un dans le monde de
                     l'aéronautique, etc.)
                   </p>
                 </div>
@@ -396,7 +407,7 @@ const Landing = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <div id="contact" className="ninth-section">
           <div className="ns-container">
             <div className="title-and-form">
@@ -437,7 +448,15 @@ const Landing = () => {
     </Fragment> /*  : (
     <PreLoader/>
   ) */
-  );
+    /*: (
+    <PreLoader/>
+  ) */
+    /*: (
+    <PreLoader/>
+  ) */
+   /*: (
+    <PreLoader/>
+  ) */);
 };
 
 export default Landing;
