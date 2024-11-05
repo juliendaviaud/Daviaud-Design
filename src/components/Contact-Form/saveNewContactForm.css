@@ -1,0 +1,50 @@
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  }
+  
+  .contact-form input, textarea {
+	width: 350px;
+	padding: 0.85rem 1.3rem;
+	flex-shrink: 0;
+	border-radius: 200px;
+	background: #1c1b1d;
+	border: none;
+	color: #f9f9f9;
+	text-align: start;
+	font-family: "Helvetica Neue";
+	font-size: 1.1rem;
+	font-style: normal;
+	font-weight: 400;
+	margin-bottom: 1rem;
+  }
+
+  .contact-form textarea {
+	height: 200px;
+	border-radius: 30px;
+  }
+  
+  /* .contact-form input:-internal-autofill-selected {
+	background-color: #1c1b1d;
+  } */
+  
+  .contact-form textarea:last-of-type {
+	margin-bottom: 0;
+  }
+
+  .validated-message {
+	margin-top: 37px;
+	font-family: "Helvetica Neue";
+	font-size: 1.1rem;
+	font-weight: 400;
+	color: #60DCA2;
+  }
+
+  .error-message {
+	margin-top: 37px;
+	font-family: "Helvetica Neue";
+	font-size: 1.1rem;
+	font-weight: 400;
+	color: #EEA7A7;
+  }

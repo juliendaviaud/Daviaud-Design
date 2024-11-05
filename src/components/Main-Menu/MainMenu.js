@@ -63,10 +63,10 @@ const MainMenu = ({isAbsolute}) => {
               <Link to="/#projects" onClick={openCloseBurgerMenu}>Projets</Link>
             </li>
             <li>
-              <Link to="/#skills" onClick={openCloseBurgerMenu}>Compétences</Link>
+              <Link to="/#pricesPacks" onClick={openCloseBurgerMenu}>Prix</Link>
             </li>
             <li>
-              <Link to="/#timeline" onClick={openCloseBurgerMenu}>Timeline</Link>
+              <Link to="/#skills" onClick={openCloseBurgerMenu}>Compétences</Link>
             </li>
             <li>
               <Link to="/about" onClick={openCloseBurgerMenu}>À propos de moi</Link>

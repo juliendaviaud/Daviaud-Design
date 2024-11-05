@@ -71,7 +71,7 @@ const ContactForm = () => {
       <input
         type="phone"
         name="phone"
-        placeholder="Numéro de téléphonne"
+        placeholder="Numéro de téléphone"
         onChange={handleChange}
         value={data.phone}
       />
