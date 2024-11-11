@@ -1,10 +1,74 @@
+.changePaymentMethodSwitchButton {
+  width: 400px;
+  height: 40px;
+  margin-bottom: 45px;
+  border-radius: 20px;
+  text-align: center;
+  /* transform: translate3D(-50%, -50%, 0); */
+  will-change: transform;
+  z-index: 197 !important;
+  cursor: pointer;
+  transition: 0.3s ease all;
+  border: 1px solid white;
+}
+
+.switch-button-case {
+  display: inline-block;
+  background: none;
+  width: 49%;
+  height: 100%;
+  color: white;
+  position: relative;
+  border: none;
+  transition: 0.3s ease all;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  padding-bottom: 1px;
+}
+
+.switch-button-case:hover {
+  color: grey;
+  cursor: pointer;
+}
+
+.switch-button-case:focus {
+  outline: none;
+}
+
+.changePaymentMethodSwitchButton .active {
+  border-radius: 20px;
+  color: #151515;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  z-index: -1;
+  transition: 0.3s ease-out all;
+}
+
+.changePaymentMethodSwitchButton .activePaymentMethodLeft {
+  left: 0;
+}
+
+.changePaymentMethodSwitchButton .activePaymentMethodRight {
+  left: 50%;
+}
+
+.changePaymentMethodSwitchButton .active-case {
+  color: #151515;
+}
+
 #pricesPacks .title-container {
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
+  margin-bottom: 50px;
 }
 
 .pricesPacks {
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   color: #fff;
@@ -18,8 +82,8 @@
 }
 
 .pricePack {
-  width: 350px;
-  height: 650px;
+  width: 390px;
+  height: 740px;
   margin-right: 35px;
   padding: 30px;
   position: relative;
@@ -40,7 +104,7 @@
   border-image: linear-gradient(30deg, #FF1432, #6A0CFB);
   border-image-slice: 1; */
   background: linear-gradient(#161616, #161616) padding-box,
-              linear-gradient(10deg, #FF1432, #6A0CFB) border-box;
+    linear-gradient(10deg, #ff1432, #6a0cfb) border-box;
   border-radius: 50em;
   border: 1px solid transparent;
   font-family: "Poppins";
@@ -63,11 +127,11 @@
   margin-bottom: 3px;
   font-family: "Rubik";
   font-weight: 500;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .pricesPackDescription {
-  margin-bottom: 14px;
+  margin-bottom: 18px;
   font-family: "Poppins";
   font-weight: 300;
   font-size: 12px;
@@ -75,7 +139,7 @@
 }
 
 .pricesPackPriceContainer {
-  margin-bottom: 20px;
+  margin-bottom: 31px;
   font-family: "Rubik";
 }
 
@@ -84,14 +148,62 @@
   font-size: 35.7px;
 }
 
+.subscriptionPackPrice {
+  font-size: 32px;
+}
+
+.subscriptionPriceContainer {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.subscriptionPriceAndCommitment {
+  display: flex;
+  flex-direction: column;
+}
+
+.pricesPackHorizontalBar {
+  width: 2px;
+  height: 40px;
+  margin: 0 20px;
+  background-color: #fff;
+  display: block;
+  border-radius: 20px;
+}
+
+.subscriptionPrice {
+  display: flex;
+  align-items: end;
+}
+
+.pricesPackSubscriptionPackSchedule {
+  font-size: 15px;
+}
+
 .pricesPackPaymentModality {
-  font-size: 13px;
+  margin-top: -2px;
+  font-size: 12px;
+}
+
+.subscriptionPrice p:last-of-type {
+  margin-left: 10px;
+  margin-bottom: 6px;
 }
 
 .pricesPackAdvantage {
   margin-bottom: 14px;
   display: flex;
   align-items: start;
+}
+
+.pricesPackAdvantagePackIncluded {
+  margin-bottom: 0;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  display: flex;
+  padding: 8px 10px;
+  justify-content: center;
 }
 
 .pricesPackAdvantageIcon {
@@ -102,7 +214,13 @@
 .pricesPackAdvantage p {
   font-family: "Poppins";
   font-weight: 300;
-  font-size: 11.6px;
+  font-size: 13px;
+}
+
+.pricesPackAdvantagePlus {
+  display: flex;
+  justify-content: center;
+  margin: 7px 0;
 }
 
 .pricesPackButton {
@@ -120,21 +238,21 @@
 }
 
 .pricesPackButton:hover {
-	border: 1px solid #fff;
+  border: 1px solid #fff;
 }
 
 .pricesPackMainButton {
-	background-color: #fff;
-	color: #161616;
+  background-color: #fff;
+  color: #161616;
 }
 
 .pricesPackMainButton:hover {
-	background-color: #161616;
-	color: #ebebeb;
+  background-color: #161616;
+  color: #ebebeb;
 }
 
 .pricePackBusiness {
-  height: 690px;
+  height: 780px;
   border: none;
 }
 
@@ -151,7 +269,7 @@
 }
 
 .pricePackBusiness .pricePackFirstSection {
-  margin-top: 40px;
+  margin-top: 37px;
 }
 
 .pricePackEcommerce {
@@ -169,41 +287,55 @@
 /* Extra large screens, TV */
 
 @media screen and (min-width: 1201px) {
-
 }
 
 /* Desktops, large screens */
 
 @media screen and /* (min-width: 1025px) and */ (max-width: 1400px) and (min-width: 1025px) {
+  .changePaymentMethodSwitchButton {
+    width: 360px;
+    height: 38px;
+  }
+
+  .changePaymentMethodSwitchButton button {
+    font-size: 11px;
+  }
+
   .pricePack {
-    width: 270px;
-    height: 570px;
+    width: 320px;
+    height: 670px;
     margin-right: 30px;
     padding: 20px;
     border-radius: 20px;
   }
 
   .pricesPackPrice {
-    font-size: 28px;
+    font-size: 25px;
+  }
+
+  .subscriptionPrice p:last-of-type {
+    margin-left: 9px;
+    margin-bottom: 4px;
+    font-size: 13px;
   }
 
   .pricesPackIcon {
     height: 25px;
     margin-bottom: 20px;
   }
-  
+
   .pricesPackCartIcon {
     height: 20px;
   }
 
   .pricePackBusiness {
-    height: 600px;
+    height: 699.5px;
     border: none;
   }
 
   .pricesMostPopular {
     right: 20px;
-    font-size: 9px;
+    font-size: 11px;
   }
 
   /* .pricesPackDescription br {
@@ -212,16 +344,20 @@
 
   .pricesPackName {
     margin-bottom: 3px;
-    font-size: 18px;
+    font-size: 20px;
   }
-  
+
   .pricesPackDescription {
-    margin-bottom: 14px;
-    font-size: 10.5px;
+    margin-bottom: 23px;
+    font-size: 12px;
   }
 
   .pricesPackPaymentModality {
-    font-size: 13px;
+    font-size: 11px;
+  }
+
+  .pricesPackHorizontalBar {
+    height: 30px;
   }
 
   .pricesPackAdvantageIcon {
@@ -229,12 +365,17 @@
     margin-right: 10px;
   }
 
+  .pricesPackAdvantage p:first-of-type {
+    margin: 0;
+  }
+
   .pricesPackAdvantage p {
-    font-size: 10px;
+    margin-top: -4px;
+    font-size: 12px;
   }
 
   .pricePackBusiness .pricePackFirstSection {
-    margin-top: 30px;
+    margin-top: 25.5px;
   }
 
   .pricePackEcommerce {
@@ -250,17 +391,25 @@
 /* Small screens, laptops */
 
 @media screen and /* (min-width: 769px) and */ (max-width: 1024px) {
+  .changePaymentMethodSwitchButton {
+    width: 360px;
+    height: 38px;
+  }
 
-  .pricesPackAdvantagesContainer br  {
-    content: ' '
+  .changePaymentMethodSwitchButton button {
+    font-size: 11px;
+  }
+
+  .pricesPackAdvantagesContainer br {
+    content: " ";
   }
   .pricesPackAdvantagesContainer br:after {
-    content: ' '
+    content: " ";
   }
 
   .pricePack {
     width: 400px;
-    height: 650px;
+    height: 720px;
     margin-right: 35px;
     padding: 30px;
     border-radius: 20px;
@@ -278,36 +427,77 @@
   }
 
   .pricePackBusiness {
-    height: 700px;
+    height: 770px;
   }
 
   .pricePackEcommerce {
     margin-right: 0;
     margin-bottom: 0;
   }
+
+  .pricesPackName {
+    font-size: 26px;
+  }
+
+  .pricesPackDescription {
+    font-size: 13px;
+  }
+
+  .subscriptionPackPrice {
+    font-size: 34px;
+  }
+
+  .subscriptionPrice p:last-of-type {
+    font-size: 14.5px;
+  }
+
+  .pricesPackPaymentModality {
+    font-size: 13px;
+  }
+
+  .pricesPackAdvantage p {
+    font-size: 13.5px;
+    margin-top: -3px;
+  }
 }
 
 /* iPads, Tablets */
 
 @media screen and /* (min-width: 481px) and */ (max-width: 768px) {
-
 }
 
 /* Mobile devices */
 
 @media screen and (max-width: 550px) {
-
 }
 
 @media screen and (max-width: 450px) {
+  .changePaymentMethodSwitchButton {
+    width: 330px;
+    height: 38px;
+    font-size: 10px;
+  }
+
   .pricePack {
     width: 350px;
-    height: 650px;
+    height: 740px;
     padding: 30px;
     border-radius: 20px;
   }
 
+  .subscriptionPackPrice {
+    font-size: 32px;
+  }
+  
+  .pricesPackPaymentModality {
+    font-size: 12px;
+  }
+  
+  .pricesPackHorizontalBar {
+    height: 30px;
+  }
+
   .pricePackBusiness {
-    height: 700px;
+    height: 760px;
   }
 }

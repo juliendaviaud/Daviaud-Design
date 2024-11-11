@@ -132,7 +132,7 @@ const Landing = () => {
                     pour votre marque
                   </h1>
                   <p>
-                    Designer innovant <br />&<br /> Développeur web
+                    Location <br />&<br /> Achat de sites internet
                   </p>
                 </div>
                 <LinkScroll
@@ -276,7 +276,7 @@ const Landing = () => {
           <div className="ss-container">
             <div className="title-container">
               <h3 className="colored-title">Chapitre 3</h3>
-              <h2>Packs développement de site web</h2>
+              <h2>Location et achat de site web</h2>
             </div>
             <Prices />
           </div>

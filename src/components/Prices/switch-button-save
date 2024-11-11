@@ -1,0 +1,88 @@
+.changePaymentMethodButtonAndText {
+  width: 1120px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.changePaymentMethodButtonAndText p {
+  width: 115px;
+  margin-left: 20px;
+}
+
+.toggle-button {
+  width: 60px;
+  height: 30px;
+  border-radius: 15px;
+  background: linear-gradient(
+    45deg,
+    #ff1432,
+    #6a0cfb
+  ); /* Dégradé par défaut pour l'état désactivé */
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative; /* Pour positionner le cercle absolument */
+  transition: background 0.2s ease; /* Animation pour le dégradé */
+}
+
+.toggle-button.purchase {
+  background: linear-gradient(
+    90deg,
+    #858585,
+    #858585
+  ); /* Dégradé pour l'état activé */
+}
+
+.toggle-circle {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  left: 4px; /* Position de départ à gauche */
+  transition: left 0.4s ease; /* Animation de déplacement */
+}
+
+.toggle-button.purchase .toggle-circle {
+  left: 34px; /* Position à droite dans le bouton quand activé */
+}
+
+@media screen and /* (min-width: 1025px) and */ (max-width: 1400px) and (min-width: 1025px) {
+  .changePaymentMethodButtonAndText {
+    width: 870px;
+    margin-bottom: 20px;
+  }
+
+  .toggle-button {
+    width: 45px;
+    height: 26px;
+    border-radius: 15px;
+    transition: background 0.2s ease; /* Animation pour le dégradé */
+  }
+
+  .toggle-button.purchase {
+    background: linear-gradient(
+      90deg,
+      #858585,
+      #858585
+    ); /* Dégradé pour l'état activé */
+  }
+
+  .toggle-circle {
+    width: 18px;
+    height: 18px;
+    left: 4px; /* Position de départ à gauche */
+  }
+
+  .toggle-button.purchase .toggle-circle {
+    left: 22px; /* Position à droite dans le bouton quand activé */
+  }
+
+  .changePaymentMethodButtonAndText p {
+    width: 102.27px;
+    margin-left: 20px;
+    font-size: 14px;
+  }
+}
