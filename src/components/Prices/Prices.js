@@ -134,11 +134,16 @@ const Prices = () => {
             <div className="pricesPackAdvantagesContainer">
               <div className="pricesPackAdvantage">
                 <img className="pricesPackAdvantageIcon" src={checked} alt="" />
-                <p>Création d'un logo</p>
+                <p>Plusieurs pages (jusqu'à 3)</p>
               </div>
               <div className="pricesPackAdvantage">
                 <img className="pricesPackAdvantageIcon" src={checked} alt="" />
-                <p>{"Design professionnel & " + (packPaymentMethod === "Subscription" ? "personalisé" : "sur-mesure")}</p>
+                <p>
+                  {"Design professionnel & " +
+                    (packPaymentMethod === "Subscription"
+                      ? "personalisé"
+                      : "sur-mesure")}
+                </p>
               </div>
               <div className="pricesPackAdvantage">
                 <img className="pricesPackAdvantageIcon" src={checked} alt="" />
@@ -154,11 +159,18 @@ const Prices = () => {
               </div>
               <div className="pricesPackAdvantage">
                 <img className="pricesPackAdvantageIcon" src={checked} alt="" />
-                <p>Hébergement & mise en ligne</p>
+                <p>
+                  Intégration de Google Analytics (suivi des visiteurs et
+                  performance du site)
+                </p>
               </div>
               <div className="pricesPackAdvantage">
                 <img className="pricesPackAdvantageIcon" src={checked} alt="" />
-                <p>Page composée de 5 sections</p>
+                <p>Création d'un logo</p>
+              </div>
+              <div className="pricesPackAdvantage">
+                <img className="pricesPackAdvantageIcon" src={checked} alt="" />
+                <p>Hébergement & mise en ligne</p>
               </div>
               <div className="pricesPackAdvantage">
                 <img className="pricesPackAdvantageIcon" src={checked} alt="" />
@@ -167,6 +179,10 @@ const Prices = () => {
                   <br />
                   (pour un site sécurisé "https")
                 </p>
+              </div>
+              <div className="pricesPackAdvantage">
+                <img className="pricesPackAdvantageIcon" src={checked} alt="" />
+                <p>Un Développeur professionel dédié</p>
               </div>
               <div className="pricesPackAdvantage">
                 <img className="pricesPackAdvantageIcon" src={checked} alt="" />
@@ -254,13 +270,7 @@ const Prices = () => {
                 <img className="pricesPackAdvantageIcon" src={checked} alt="" />
                 <p>Optimisation du parcours utilisateur</p>
               </div>
-              <div className="pricesPackAdvantage">
-                <img className="pricesPackAdvantageIcon" src={checked} alt="" />
-                <p>
-                  Intégration de Google Analytics (suivi des visiteurs et
-                  performance du site)
-                </p>
-              </div>
+              
               <div className="pricesPackAdvantage">
                 <img className="pricesPackAdvantageIcon" src={checked} alt="" />
                 <p>Intégration d'une carte Google Maps</p>
