@@ -7,28 +7,22 @@ import cart from "../../assets/images/cart.svg";
 import checked from "../../assets/images/checked.svg";
 
 const Prices = () => {
-  const [packPaymentMethod, setpackPaymentMethod] = useState("Subscription");
+  const [subscriptionTime, setSubscriptionTime] = useState(3);
 
   /* const toggle = () => {
     packPaymentMethod === "Subscription"
       ? setpackPaymentMethod("Purchase")
       : setpackPaymentMethod("Subscription");
   }; */
-  const toggle = () => {
-    packPaymentMethod === "Subscription"
+  /* const toggle = (numberOfMonth) => {
+    packPaymentMethod === 3
       ? setpackPaymentMethod("Purchase")
       : setpackPaymentMethod("Subscription");
-  };
+  }; */
 
-  const switchPaymentMethodToSubscription = () => {
-    if (packPaymentMethod !== "Subscription") {
-      setpackPaymentMethod("Subscription");
-    }
-  };
-
-  const switchPaymentMethodToPurchase = () => {
-    if (packPaymentMethod !== "Purchase") {
-      setpackPaymentMethod("Purchase");
+  const switchSubscriptionTime = (numberOfMonth) => {
+    if (subscriptionTime !== numberOfMonth) {
+      setSubscriptionTime(numberOfMonth);
     }
   };
   return (
@@ -53,28 +47,52 @@ const Prices = () => {
           className={
             "active" +
             " " +
-            (packPaymentMethod === "Subscription"
-              ? "activePaymentMethodLeft"
-              : "activePaymentMethodRight")
+            (subscriptionTime === 3
+              ? "activeSubscriptionPeriodLeft"
+              : subscriptionTime === 6
+              ? "activeSubscriptionPeriodMiddleLeft"
+              : subscriptionTime === 12
+              ? "activeSubscriptionPeriodMiddleRight"
+              : "activeSubscriptionPeriodRight")
           }
         ></span>
         <button
           className={
             "switch-button-case paymentSwitchButtonLeft" +
             " " +
-            (packPaymentMethod === "Subscription" ? "active-case" : "")
+            (subscriptionTime === 3 ? "active-case" : "")
           }
-          onClick={() => switchPaymentMethodToSubscription()}
+          onClick={() => switchSubscriptionTime(3)}
         >
-          Abonnements
+          3 mois
         </button>
         <button
           className={
             "switch-button-case paymentSwitchButtonRight" +
             " " +
-            (packPaymentMethod === "Purchase" ? "active-case" : "")
+            (subscriptionTime === 6 ? "active-case" : "")
           }
-          onClick={() => switchPaymentMethodToPurchase()}
+          onClick={() => switchSubscriptionTime(6)}
+        >
+          6 mois
+        </button>
+        <button
+          className={
+            "switch-button-case paymentSwitchButtonRight" +
+            " " +
+            (subscriptionTime === 12 ? "active-case" : "")
+          }
+          onClick={() => switchSubscriptionTime(12)}
+        >
+          1 an
+        </button>
+        <button
+          className={
+            "switch-button-case paymentSwitchButtonRight" +
+            " " +
+            (subscriptionTime === 1000 ? "active-case" : "")
+          }
+          onClick={() => switchSubscriptionTime(1000)}
         >
           Achat
         </button>
@@ -90,46 +108,34 @@ const Prices = () => {
               Idéal pour les petits budgets.
             </p>
             <div className="pricesPackPriceContainer">
-              {packPaymentMethod === "Subscription" ? (
-                <div className="subscriptionPriceContainer">
-                  <div className="subscriptionPriceAndCommitment">
-                    <div className="subscriptionPrice">
-                      <p className="pricesPackPrice subscriptionPackPrice">
-                        50€
-                      </p>
-                      <p>/mois</p>
-                    </div>
-                    <p className="pricesPackPaymentModality">
-                      Engagement d'un an
-                    </p>
-                  </div>
-                  <span className="pricesPackHorizontalBar"></span>
-                  <div className="subscriptionPriceAndCommitment">
-                    <div className="subscriptionPrice">
-                      <p className="pricesPackPrice subscriptionPackPrice">
-                        70€
-                      </p>
-                      <p className="pricesPackSubscriptionPackSchedule">
-                        /mois
-                      </p>
-                    </div>
-                    <p className="pricesPackPaymentModality">Sans engagement</p>
-                  </div>
-                </div>
-              ) : (
-                <>
-                  <p className="pricesPackPrice">1500€</p>
-                  <p className="pricesPackPaymentModality">
-                    Paiement en plusieurs fois
-                  </p>
-                </>
-              )}
-
-              {/* <p className="pricesPackPaymentModality">
-                {packPaymentMethod === "Subscription"
-                  ? "Engagement d'un an"
+              <div className="subscriptionPrice">
+                <p className="pricesPackPrice">
+                  {subscriptionTime === 3
+                    ? "60€"
+                    : subscriptionTime === 6
+                    ? "55€"
+                    : subscriptionTime === 12
+                    ? "50€"
+                    : "1500€"}
+                </p>
+                <p
+                  className={
+                    "pricesPackSubscriptionPackSchedule" +
+                    (subscriptionTime === 1000 ? " displayNone" : "")
+                  }
+                >
+                  /mois
+                </p>
+              </div>
+              <p className="pricesPackPaymentModality">
+                {subscriptionTime === 3
+                  ? "Abonnement de 3 mois"
+                  : subscriptionTime === 6
+                  ? "Abonnement de 6 mois"
+                  : subscriptionTime === 12
+                  ? "Abonnement de 1 an"
                   : "Paiement en plusieurs fois"}
-              </p> */}
+              </p>
             </div>
             <div className="pricesPackAdvantagesContainer">
               <div className="pricesPackAdvantage">
@@ -140,9 +146,7 @@ const Prices = () => {
                 <img className="pricesPackAdvantageIcon" src={checked} alt="" />
                 <p>
                   {"Design professionnel & " +
-                    (packPaymentMethod === "Subscription"
-                      ? "personalisé"
-                      : "sur-mesure")}
+                    (subscriptionTime < 1000 ? "personalisé" : "sur-mesure")}
                 </p>
               </div>
               <div className="pricesPackAdvantage">
@@ -180,10 +184,30 @@ const Prices = () => {
                   (pour un site sécurisé "https")
                 </p>
               </div>
-              <div className="pricesPackAdvantage">
-                <img className="pricesPackAdvantageIcon" src={checked} alt="" />
-                <p>Un Développeur professionel dédié</p>
-              </div>
+              {subscriptionTime < 1000 ? (
+                <div className="pricesPackAdvantage">
+                  <img
+                    className="pricesPackAdvantageIcon"
+                    src={checked}
+                    alt=""
+                  />
+                  <p>
+                    Un accompagnement par un développeur professionel dédié (
+                    <span className="coloredText">une réunion par mois</span>)
+                  </p>
+                </div>
+              ) : (
+                <div className="pricesPackAdvantage">
+                  <img
+                    className="pricesPackAdvantageIcon"
+                    src={checked}
+                    alt=""
+                  />
+                  <p>
+                    Une formation de la base de la gestion du site par un développeur professionel dédié
+                  </p>
+                </div>
+              )}
               <div className="pricesPackAdvantage">
                 <img className="pricesPackAdvantageIcon" src={checked} alt="" />
                 <p>Intégration des réseaux sociaux</p>
@@ -214,17 +238,54 @@ const Prices = () => {
               Parfait pour présenter votre activité.
             </p>
             <div className="pricesPackPriceContainer">
-              {packPaymentMethod === "Subscription" ? (
+              <div className="subscriptionPrice">
+                <p className="pricesPackPrice">
+                  {subscriptionTime === 3
+                    ? "80€"
+                    : subscriptionTime === 6
+                    ? "75€"
+                    : subscriptionTime === 12
+                    ? "70€"
+                    : "1700 - 3000€"}
+                </p>
+                <p
+                  className={
+                    "pricesPackSubscriptionPackSchedule" +
+                    (subscriptionTime === 1000 ? " displayNone" : "")
+                  }
+                >
+                  /mois
+                </p>
+              </div>
+              <p className="pricesPackPaymentModality">
+                {subscriptionTime === 3
+                  ? "Abonnement de 3 mois"
+                  : subscriptionTime === 6
+                  ? "Abonnement de 6 mois"
+                  : subscriptionTime === 12
+                  ? "Abonnement de 1 an"
+                  : "Paiement en plusieurs fois"}
+              </p>
+              {/* {packPaymentMethod === "Subscription" ? (
                 <div className="subscriptionPriceContainer">
                   <div className="subscriptionPriceAndCommitment">
                     <div className="subscriptionPrice">
                       <p className="pricesPackPrice subscriptionPackPrice">
-                        78€
+                        {subscriptionTime === 3
+                          ? "80€"
+                          : subscriptionTime === 6
+                          ? "75€"
+                          : "70€"}
                       </p>
                       <p>/mois</p>
                     </div>
                     <p className="pricesPackPaymentModality">
-                      Engagement d'un an
+                      {"Abonnement de " +
+                        (subscriptionTime === 3
+                          ? "3 mois"
+                          : subscriptionTime === 6
+                          ? "6 mois"
+                          : "1 an")}
                     </p>
                   </div>
                   <span className="pricesPackHorizontalBar"></span>
@@ -247,7 +308,7 @@ const Prices = () => {
                     Paiement en plusieurs fois
                   </p>
                 </>
-              )}
+              )} */}
 
               {/* <p className="pricesPackPaymentModality">
                 {packPaymentMethod === "Subscription"
@@ -270,7 +331,7 @@ const Prices = () => {
                 <img className="pricesPackAdvantageIcon" src={checked} alt="" />
                 <p>Optimisation du parcours utilisateur</p>
               </div>
-              
+
               <div className="pricesPackAdvantage">
                 <img className="pricesPackAdvantageIcon" src={checked} alt="" />
                 <p>Intégration d'une carte Google Maps</p>
@@ -314,46 +375,34 @@ const Prices = () => {
               plateforme e-commerce sur mesure.
             </p>
             <div className="pricesPackPriceContainer">
-              {packPaymentMethod === "Subscription" ? (
-                <div className="subscriptionPriceContainer">
-                  <div className="subscriptionPriceAndCommitment">
-                    <div className="subscriptionPrice">
-                      <p className="pricesPackPrice subscriptionPackPrice">
-                        150€
-                      </p>
-                      <p>/mois</p>
-                    </div>
-                    <p className="pricesPackPaymentModality">
-                      Engagement d'un an
-                    </p>
-                  </div>
-                  <span className="pricesPackHorizontalBar"></span>
-                  <div className="subscriptionPriceAndCommitment">
-                    <div className="subscriptionPrice">
-                      <p className="pricesPackPrice subscriptionPackPrice">
-                        170€
-                      </p>
-                      <p className="pricesPackSubscriptionPackSchedule">
-                        /mois
-                      </p>
-                    </div>
-                    <p className="pricesPackPaymentModality">Sans engagement</p>
-                  </div>
-                </div>
-              ) : (
-                <>
-                  <p className="pricesPackPrice">+4000€</p>
-                  <p className="pricesPackPaymentModality">
-                    Paiement en plusieurs fois
-                  </p>
-                </>
-              )}
-
-              {/* <p className="pricesPackPaymentModality">
-                {packPaymentMethod === "Subscription"
-                  ? "Engagement d'un an"
+              <div className="subscriptionPrice">
+                <p className="pricesPackPrice">
+                  {subscriptionTime === 3
+                    ? "160€"
+                    : subscriptionTime === 6
+                    ? "155€"
+                    : subscriptionTime === 12
+                    ? "150€"
+                    : "+4000€"}
+                </p>
+                <p
+                  className={
+                    "pricesPackSubscriptionPackSchedule" +
+                    (subscriptionTime === 1000 ? " displayNone" : "")
+                  }
+                >
+                  /mois
+                </p>
+              </div>
+              <p className="pricesPackPaymentModality">
+                {subscriptionTime === 3
+                  ? "Abonnement de 3 mois"
+                  : subscriptionTime === 6
+                  ? "Abonnement de 6 mois"
+                  : subscriptionTime === 12
+                  ? "Abonnement de 1 an"
                   : "Paiement en plusieurs fois"}
-              </p> */}
+              </p>
             </div>
             <div className="pricesPackAdvantagesContainer">
               <div className="pricesPackAdvantage pricesPackAdvantagePackIncluded">

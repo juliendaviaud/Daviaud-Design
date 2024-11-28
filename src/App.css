@@ -57,6 +57,10 @@ input, textarea {
   outline: none;
 }
 
+.displayNone {
+  display: none;
+}
+
 .absolute {
   position: absolute;
 }
@@ -66,6 +70,13 @@ input, textarea {
 
 :root {
   --TITLE-GRADIENT-COLOR: linear-gradient(270deg, #6D27DA 30.5%, #EA2D45 95.74%);
+}
+
+.coloredText {
+  background: var(--TITLE-GRADIENT-COLOR);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 
