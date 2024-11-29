@@ -7,7 +7,7 @@ import cart from "../../assets/images/cart.svg";
 import checked from "../../assets/images/checked.svg";
 
 const Prices = () => {
-  const [subscriptionTime, setSubscriptionTime] = useState(3);
+  const [subscriptionTime, setSubscriptionTime] = useState(12);
 
   /* const toggle = () => {
     packPaymentMethod === "Subscription"
