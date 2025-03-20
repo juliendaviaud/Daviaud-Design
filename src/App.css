@@ -3,7 +3,13 @@
 @font-face {
   font-family: "Helvetica Neue Light";   /*Can be any text*/
   src: local("HelveticaNeue"),
-    url("./assets/fonts/helvetica-neue/HelveticaNeueLight.ttf") format("ttf");
+    url("./assets/fonts/helvetica-neue/HelveticaNeueLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Helvetica Neue Thin";   /*Can be any text*/
+  src: local("HelveticaNeue"),
+    url("./assets/fonts/helvetica-neue/HelveticaNeue-Thin.otf") format("otf");
 }
 
 @font-face {

@@ -1,0 +1,225 @@
+.projectsPageContainer {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projectsList {
+  max-width: 1200px;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.projectListed {
+  margin-right: 110px;
+}
+
+.projectsListRow {
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.projectListedNoMarginRight {
+  margin-right: 0;
+}
+
+.projectListedImageContainer {
+  width: 400px;
+  height: 290px;
+  padding-top: 30px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.projectListedImageLink {
+  width: 400px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  z-index: 1;
+  transition: all 0.4s 0s;
+  -webkit-transition: all 0.4s 0s;
+  -moz-transition: all 0.4s 0s;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  border-radius: 10px;
+}
+
+.projectListedImageLink:hover {
+  height: 420px;
+  transform: translateY(-20px);
+}
+
+.projectListedImageAndText {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectListedImage {
+  width: 400px;
+  height: 300px;
+  opacity: 0.9;
+  border-radius: 10px;
+}
+
+/* .projectListedImage {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+} */
+
+/* .projectListedImageContainer {
+  height: 180px;
+  overflow: hidden;
+} */
+
+.projectListedImageHoverContainer {
+  /* top: 28%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  opacity: 0;
+  z-index: 2;
+  color: #ffffff;
+  transition: all 0.3s 0s;
+}
+
+.projectListedImageHoverContainer img {
+  width: 30px;
+  margin-bottom: 5px;
+}
+
+.projectListedImageContainer:hover .projectListedImage {
+  opacity: 0.5;
+  /* -webkit-filter: brightness(.5);
+  filter: brightness(.5); */
+  /* transition: width 0.3s ease 0s, left 0.3s ease 0s; */
+}
+
+.projectListedImageContainer:hover .projectListedImageHoverContainer {
+  opacity: 1;
+  /* -webkit-filter: brightness(.5);
+  filter: brightness(.5); */
+  /* transition: width 0.3s ease 0s, left 0.3s ease 0s; */
+}
+
+.projectListedText {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  margin-top: 16px;
+  color: #ffffff;
+}
+
+.projectListedText h4 {
+  margin-bottom: 4px;
+  font-family: Poppins;
+  font-weight: 300;
+  font-size: 1.02rem;
+}
+
+.projectListedTextClient {
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-family: "Helvetica Neue";
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.projectLink {
+  width: fit-content;
+}
+
+/* .projectLinkText {
+  font-size: 0.92em;
+} */
+
+.projectLinkContainer {
+  /* width: 220px;
+  height: 20px; */
+}
+
+.projectLinkText {
+  width: fit-content;
+  position: relative;
+  text-align: center;
+  font-family: "Helvetica Neue";
+  font-size: 1.02rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.5rem;
+  color: #ffffff;
+  text-decoration: none;
+  background: linear-gradient(98deg, #6a0cfb 4.47%, #ea2d45 92.33%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.projectLinkContainer:hover .projectLinkText {
+  background: linear-gradient(98deg, #6a0cfb 4.47%, #ea2d45 92.33%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.projectLinkText:after {
+  background: linear-gradient(98deg, #6a0cfb 4.47%, #ea2d45 92.33%);
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.projectLinkContainer:hover .projectLinkText:after {
+  width: 100%;
+  left: 0;
+}
+
+.projectListedTextClient {
+}
+
+@media screen and /* (min-width: 481px) and */ (max-width: 1024px) {
+  .projectListed {
+    margin-right: 85px;
+  }
+
+  .projectListedNoMarginRight {
+    margin-right: 0;
+  }
+
+  .projectListedImage {
+    height: 160px;
+  }
+}
+
+@media screen and /* (min-width: 481px) and */ (max-width: 768px) {
+  .projectsListRow {
+    flex-direction: column;
+  }
+
+  .projectListed {
+    margin-right: 0;
+    margin-bottom: 80px;
+  }
+
+  .projectListedNoMarginRight {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  .projectListedImage {
+    height: 160px;
+  }
+}

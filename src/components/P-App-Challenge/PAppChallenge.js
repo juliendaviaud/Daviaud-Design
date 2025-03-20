@@ -11,23 +11,64 @@ const PAppChallenge = () => {
   const solutionText =
     "Spie m’a ainsi demandé de m’occuper du design, du développement front, mais également du développement back de cette application. \n \n Pour le design de l’application, j’ai souhaité conserver la couleur bleu (couleur principale de Spie avec le rouge) pour représenter la marque, mais également, mettre en valeur les images et photos des voyages proposés en récompenses de ces challenges. J’ai également choisi de mettre beaucoup de blanc, afin de donner un côté très épuré et moderne à l’application. Spie a demandé la présence de beaucoup d’éléments à l’écran, ce qui m’a convaincu de beaucoup utiliser la couleur blanche, afin de surcharger le moins possible l’oeil des utilisateurs. \n \n En ce qui concerne l’utilisation des technologies, j’ai souhaité rester sur des technologies de base, à savoir, le html, le css, le Javascript et le Php. Mais également le SQL pour la base de données. Ce choix de technologie a été fait, afin de simplifier la prise en main et la maintenance de l’application par d’autres développeurs par la suite. C’est pourquoi il n’y a la présence d’aucun framework ou plugins dans le code de ce projet.";
 
-  const photos = [
-    "../../assets/images/app-challenge/image-1.jpg",
-    "../../assets/images/app-challenge/image-1.jpg",
-    "../../assets/images/app-challenge/image-1.jpg",
-    "../../assets/images/app-challenge/image-1.jpg",
-    "../../assets/images/app-challenge/image-1.jpg",
-    "../../assets/images/app-challenge/image-1.jpg",
-    "../../assets/images/app-challenge/image-1.jpg",
-    "../../assets/images/app-challenge/image-1.jpg",
-    "../../assets/images/app-challenge/image-1.jpg",
-    "../../assets/images/app-challenge/image-1.jpg",
-  ];
+    const galleryPhotos = [
+      "../../assets/images/app-challenge/image-1.jpg",
+      "../../assets/images/app-challenge/image-1.jpg",
+      "../../assets/images/app-challenge/image-1.jpg",
+      "../../assets/images/app-challenge/image-1.jpg",
+      "../../assets/images/app-challenge/image-1.jpg",
+      "../../assets/images/app-challenge/image-1.jpg",
+      "../../assets/images/app-challenge/image-1.jpg",
+      "../../assets/images/app-challenge/image-1.jpg",
+      "../../assets/images/app-challenge/image-1.jpg",
+      "../../assets/images/app-challenge/image-1.jpg",
+    ];
+  
+    const lightboxPhotos = [
+      {
+        src: "../../assets/images/app-challenge/app-challenge-full-main-page.png",
+        title: "Page de connexion",
+        description: "Page de thérapies",
+        column: 1,
+      },
+      {
+        src: "../../assets/images/app-challenge/app-challenge-full-challenge-details-page.png",
+        title: "Page principale",
+        description: "Page challenge",
+        column: 2,
+      },
+      {
+        src: "../../assets/images/app-challenge/app-challenge-full-challenge-ranking-page.png",
+        title: "Page de connexion",
+        description: "Page de thérapies",
+        column: 1,
+      },
+      {
+        src: "../../assets/images/app-challenge/app-challenge-full-challenge-rewards-page.png",
+        title: "Page de connexion",
+        description: "Page de thérapies",
+        column: 2,
+      },
+      {
+        src: "../../assets/images/app-challenge/app-challenge-full-log-in-page.png",
+        title: "Page de connexion",
+        description: "Page de thérapies",
+        column: 1,
+      },
+      {
+        src: "../../assets/images/app-challenge/app-challenge-full-profil-page.png",
+        title: "Page de connexion",
+        description: "Page de thérapies",
+        column: 2,
+      },
+    ];
 
   const childProps = {
-    coloredMainTitle: "Développée pour Spie",
+    coloredMainTitle: "Entreprise Spie ICS",
     mainTitle: "Application Challenge",
+    isThereAVideo: true,
     presentationVideo: challengeVideo,
+    presentationImage: "../../assets/images/application-challenge/project-details-main-image.png",
     clientName: "Spie",
     technologies: [
       "Adobe Xd",
@@ -43,7 +84,9 @@ const PAppChallenge = () => {
     needs: needsText,
     solutionImage: rightImg,
     solution: solutionText,
-    photos: photos,
+    isThereMobileMockup: false,
+    galleryPhotos: galleryPhotos,
+    lightboxPhotos: lightboxPhotos,
   };
 
   return (

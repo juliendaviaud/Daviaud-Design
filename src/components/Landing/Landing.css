@@ -10,12 +10,29 @@
 
 /* FIRST SECTION */
 
+.presentation-text-container {
+  width: 44%;
+  max-width: 824px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #f9f9f9;
+}
+
+.presentation-text-container p {
+  font-family: "Helvetica Neue Light";
+  font-size: 1rem;
+  line-height: 24px;
+  text-align: center;
+}
+
 .first-section {
   height: 100svh;
-  margin-bottom: 10.5rem;
-  /* background-image: url(../../assets/images/landing-fs-black-waves.jpg);
+  margin-bottom: 20rem;
+  transform: translate3d(0px, 0px, -1px);
+  background-image: url(../../assets/images/landing-fs-black-waves.jpg);
 	background-size: cover;
-	background-repeat: no-repeat; */
+	background-repeat: no-repeat;
 }
 
 .fs-container {
@@ -35,8 +52,13 @@
 }
 
 .isocahedron-container {
+  /* NORMAL */
   width: 288px;
   height: 288px;
+
+  /* SMALLER */
+  /* width: 248px;
+  height: 248px; */
 }
 
 .fs-text-and-button-container {
@@ -47,7 +69,7 @@
 }
 
 .fs-text-container {
-  margin-top: 15px;
+  /* margin-top: 15px; */
   text-align: center;
   color: #f9f9f9;
 }
@@ -107,6 +129,14 @@
   transform-style: preserve-3d; */
 }
 
+.project-button {
+  margin-top: 70px;
+}
+
+.gradient-button:hover {
+  cursor: pointer;
+}
+
 .gradient-button::before {
   content: "";
   position: absolute;
@@ -151,6 +181,10 @@
   filter: blur(11.687127113342285px);
   -webkit-animation: rotation 20s linear;
   animation: rotation 20s linear;
+}
+
+.presentation-text-section-gradient-button {
+  margin-top: 55px;
 }
 
 .social-networks {
@@ -205,6 +239,14 @@
   text-align: center;
   font-family: "Helvetica Neue";
   color: #f9f9f9;
+}
+
+.presentation-text-section-title {
+  margin-bottom: 33px;
+}
+
+.presentation-text-section-title p {
+  font-size: 1.2rem;
 }
 
 .fos-container .title-container p {
@@ -709,6 +751,9 @@
 /* Extra large screens, TV */
 
 @media screen and (min-width: 1201px) {
+
+
+
 }
 
 /* Desktops, large screens */
@@ -801,6 +846,15 @@
 
   .title-container {
     margin-bottom: 90px;
+  }
+
+  .presentation-text-section-title {
+    margin-bottom: 50px;
+  }
+
+  .presentation-text-container {
+    width: auto;
+    max-width: 447px;
   }
 
   /* Landing section */
@@ -926,6 +980,10 @@
 
 @media screen and (max-width: 550px) {
 
+  .presentation-text-container {
+    width: 70%;
+  }
+
   .first-react-project {
     text-align: center;
   }
@@ -981,6 +1039,9 @@
 }
 
 @media screen and (max-width: 450px) {
+
+  .firs
+
   .fs-container h1 {
     font-size: 1.5rem;
     line-height: 2rem;

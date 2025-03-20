@@ -57,10 +57,10 @@ const MainMenu = ({isAbsolute}) => {
             alt="Logo Daviaud Design"
           />
         </a>
-        <div ref={refNavLinks} className="nav-links">
+        <div className="nav-links nav-links-desktop">
           <ul>
             <li>
-              <Link to="/#projects" onClick={openCloseBurgerMenu}>Projets</Link>
+              <Link to="/mes-realisations" onClick={openCloseBurgerMenu}>Réalisations</Link>
             </li>
             <li>
               <Link to="/#pricesPacks" onClick={openCloseBurgerMenu}>Prix</Link>
@@ -69,7 +69,26 @@ const MainMenu = ({isAbsolute}) => {
               <Link to="/#skills" onClick={openCloseBurgerMenu}>Compétences</Link>
             </li>
             <li>
-              <Link to="/about" onClick={openCloseBurgerMenu}>À propos de moi</Link>
+              <Link to="/a-propos" onClick={openCloseBurgerMenu}>À propos de moi</Link>
+            </li>
+            <li>
+              <Link to="/#contact" onClick={openCloseBurgerMenu}>Contact</Link>
+            </li>
+          </ul>
+        </div>
+        <div ref={refNavLinks} className="nav-links nav-links-mobile">
+          <ul>
+            <li>
+              <Link to="/#projects" onClick={openCloseBurgerMenu}>Réalisations</Link>
+            </li>
+            <li>
+              <Link to="/#pricesPacks" onClick={openCloseBurgerMenu}>Prix</Link>
+            </li>
+            <li>
+              <Link to="/#skills" onClick={openCloseBurgerMenu}>Compétences</Link>
+            </li>
+            <li>
+              <Link to="/a-propos" onClick={openCloseBurgerMenu}>À propos de moi</Link>
             </li>
             <li>
               <Link to="/#contact" onClick={openCloseBurgerMenu}>Contact</Link>

@@ -16,6 +16,8 @@ import qwesteoVideo from "../../assets/videos/qwesteo.mp4";
 import MainMenu from "../Main-Menu/MainMenu";
 import ContactForm from "../Contact-Form/ContactForm";
 import { Link as LinkScroll } from "react-scroll";
+import { Link } from "react-router-dom";
+
 import PreLoader from "../Pre-Loader/PreLoader";
 import Prices from "../Prices/Prices";
 
@@ -166,11 +168,40 @@ const Landing = () => {
           </div>
         </div>
         <LandingPageNavigation />
+        <div id="projects" className="fourth-section space-between-sections">
+          <div className="fos-container">
+            <div className="title-container presentation-text-section-title">
+              <h3 className="colored-title">Chapitre 1</h3>
+              <h2>Votre Designer & Développeur Web Indépendant</h2>
+              <p>
+                Création ou location de site internet,
+                <br />
+                <br /> selon vos besoins.
+              </p>
+            </div>
+            <div className="presentation-text-container">
+              <p>
+                En tant que freelance, je conçois des sites web sur mesure qui
+                allient design soigné et performance technique. Que vous
+                souhaitiez acheter un site pour un projet durable ou
+                louer un site pour disposer rapidement d’une solution clé en
+                main, je m’adapte à votre rythme et à vos objectifs. Avec moi,
+                vous bénéficiez d’un accompagnement personnalisé pour booster
+                votre présence en ligne en toute simplicité.
+              </p>
+            </div>
+            <Link rel="" type="" to="/mes-realisations">
+              <button className="gradient-button presentation-text-section-gradient-button">
+                Voir toutes mes réalisations
+              </button>
+            </Link>
+          </div>
+        </div>
         {/* <ModelScroll /> */}
         <div id="reliability" className="third-section space-between-sections">
           <div className="ts-container">
             <div className="title-container">
-              <h3 className="colored-title">Chapitre 1</h3>
+              <h3 className="colored-title">Chapitre 2</h3>
               <h2>Communication et valeurs humaines</h2>
             </div>
             <div className="three-arguments-section">
@@ -179,7 +210,7 @@ const Landing = () => {
                 <h4>Bonne relation</h4>
                 <p>
                   Les relations humaines sont très importantes pour moi. Je vous
-                  garanti une excellente communication, honnête, fluide,
+                  garantis une excellente communication, honnête, fluide,
                   efficace et réactive.
                 </p>
               </div>
@@ -188,7 +219,7 @@ const Landing = () => {
                 <h4>Qualité</h4>
                 <p>
                   La satisfaction de mes clients est fondamentale pour moi. Je
-                  vous promet un design, un site internet que vous aimerez à
+                  vous promet un design et un site internet que vous aimerez à
                   coup sûr et dont vous serez fier.
                 </p>
               </div>
@@ -208,10 +239,10 @@ const Landing = () => {
         <div id="projects" className="fourth-section space-between-sections">
           <div className="fos-container">
             <div className="title-container">
-              <h3 className="colored-title">Chapitre 2</h3>
-              <h2>Projets</h2>
+              <h3 className="colored-title">Chapitre 3</h3>
+              <h2>Réalisations</h2>
               <p>
-                Cliquez sur les projets, pour connaitre
+                Cliquez sur les projets, pour avoir
                 <br />
                 <br /> plus de détails les concernants
               </p>
@@ -219,6 +250,11 @@ const Landing = () => {
             <ProjectVideo {...appChallengeProps} />
             <ProjectVideo {...tristanMeliaProps} />
             <ProjectVideo {...qwesteoProps} />
+            <Link rel="" type="" to="/mes-realisations">
+              <button className="gradient-button project-button">
+                Voir toutes mes réalisations
+              </button>
+            </Link>
 
             {/* <a
               className="first-react-project"
@@ -275,7 +311,7 @@ const Landing = () => {
         <div id="pricesPacks" className="fifth-section space-between-sections">
           <div className="ss-container">
             <div className="title-container">
-              <h3 className="colored-title">Chapitre 3</h3>
+              <h3 className="colored-title">Chapitre 4</h3>
               <h2>Location et achat de site web</h2>
             </div>
             <Prices />
@@ -285,7 +321,7 @@ const Landing = () => {
         <div id="skills" className="seventh-section space-between-sections">
           <div className="ss-container">
             <div className="title-container">
-              <h3 className="colored-title">Chapitre 4</h3>
+              <h3 className="colored-title">Chapitre 5</h3>
               <h2>Compétences</h2>
             </div>
             <div className="skills-container">{displaySkills}</div>
@@ -446,6 +482,12 @@ const Landing = () => {
         </div>
       </div>
     </Fragment> /*  : (
+    <PreLoader/>
+  ) */
+    /*: (
+    <PreLoader/>
+  ) */
+    /*: (
     <PreLoader/>
   ) */
     /*: (

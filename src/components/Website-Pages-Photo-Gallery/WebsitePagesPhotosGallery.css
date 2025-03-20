@@ -1,0 +1,38 @@
+.pagePhotoContainer {
+  margin-bottom: 40px;
+}
+
+.pagePhotoContainer:hover {
+  cursor: pointer;
+}
+
+.pagePhotoContainer img {
+  width: 100%;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  /* transition: box-shadow .3s; */
+}
+
+.pagePhotoContainer img:hover {
+  border: 2px solid rgb(191, 191, 191);
+  /* box-shadow: 0 0 11px rgb(255, 255, 255);  */
+}
+
+.allPagesPhotosContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.firstColumnPhotos {
+  margin-right: 40px;
+}
+
+@media screen and /* (min-width: 769px) and */ (max-width: 1024px) {
+  .allPagesPhotosContainer {
+    flex-direction: column;
+  }
+
+  .firstColumnPhotos {
+    margin-right: 0;
+  }
+}

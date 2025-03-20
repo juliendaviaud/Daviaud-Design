@@ -2,11 +2,14 @@ import React, { Fragment, useEffect, useRef } from "react";
 import "./ProjectDetails.css";
 import MainMenu from "../Main-Menu/MainMenu";
 import PhotoGallery from "../Photo-Gallery/PhotoGallery";
+import WebsitePagesPhotosGallery from "../Website-Pages-Photo-Gallery/WebsitePagesPhotosGallery";
 
 const ProjectDetails = ({
   coloredMainTitle,
   mainTitle,
+  isThereAVideo,
   presentationVideo,
+  presentationImage,
   clientName,
   technologies,
   jobs,
@@ -14,8 +17,10 @@ const ProjectDetails = ({
   needs,
   solutionImage,
   solution,
-  photos,
+  galleryPhotos,
+  lightboxPhotos,
 }) => {
+
   const video = useRef(null);
 
   const attemptPlay = () => {
@@ -34,17 +39,13 @@ const ProjectDetails = ({
           onClick={(e) => changeSelectedDot(e, anchor.id)}
         ></li>
       </a> */
-      
-        <li key={index}>{technologie}</li>
-      
 
+      <li key={index}>{technologie}</li>
     );
   });
 
   const displayJobs = jobs.map((job, index) => {
-    return(
-      <li key={index}>{job}</li>
-    )
+    return <li key={index}>{job}</li>;
   });
 
   /* const displayTechnologies = () => {
@@ -55,8 +56,6 @@ const ProjectDetails = ({
     console.log(indents);
     return indents;
   } */
-  
-  
 
   useEffect(() => {
     attemptPlay();
@@ -82,17 +81,21 @@ const ProjectDetails = ({
               <h3 className="colored-title">{coloredMainTitle}</h3>
               <h1>{mainTitle}</h1>
             </div>
-            <video
-              playsInline
-              loop
-              muted
-              alt="All the devices"
-              src={presentationVideo}
-              ref={video}
-            />
+            {isThereAVideo ? (
+              <video
+                playsInline
+                loop
+                muted
+                alt="All the devices"
+                src={presentationVideo}
+                ref={video}
+              />
+            ) : (
+              <img src={presentationImage} alt="" />
+            )}
           </div>
           <div className="pd-body">
-            <div className="informations">
+            {/* <div className="informations">
               <div className="title-container">
                 <h3 className="colored-title">Chapitre 1</h3>
                 <h2>Informations</h2>
@@ -113,14 +116,14 @@ const ProjectDetails = ({
                       {displayTechnologies}
                     </ul>
                   </div>
-                  {/* <div className="list-container">
+                   <div className="list-container">
                     <ul>
                       <li>{technologies[4]}</li>
                       <li>{technologies[5]}</li>
                       <li>{technologies[6]}</li>
                       <li>{technologies[7]}</li>
                     </ul>
-                  </div> */}
+                  </div> 
                 </div>
                 <div className="postes-container">
                   <div className="title-and-line">
@@ -132,9 +135,9 @@ const ProjectDetails = ({
                   </ul>
                 </div>
               </div>
-            </div>
+            </div> */}
 
-            <div className="pd-img-and-text">
+            {/* <div className="pd-img-and-text">
               <div className="left-img">
                 <img src={needsImage} alt="" />
               </div>
@@ -157,11 +160,12 @@ const ProjectDetails = ({
               <div className="right-img">
                 <img src={solutionImage} alt="" />
               </div>
-            </div>
+            </div> */}
             <div className="pd-solution"></div>
             {/* <div className="pd-gallery">
               <PhotoGallery photos={photos} />
             </div> */}
+            <WebsitePagesPhotosGallery lightboxPhotos = {lightboxPhotos}/>
           </div>
         </div>
       </div>

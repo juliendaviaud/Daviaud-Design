@@ -13,6 +13,7 @@
 }
 
 .project-details-container {
+  margin-top: 30px;
   color: #f9f9f9;
 }
 
@@ -40,10 +41,14 @@
   border-radius: 10px;
 }
 
+.pd-header img {
+  border-radius: 10px;
+}
+
 /* Project Details Body */
 
 .pd-body {
-  width: 50%;
+  width: 65%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -200,6 +205,10 @@ li {
 /* Small screens, laptops */
 
 @media screen and /* (min-width: 769px) and */ (max-width: 1024px) {
+  
+  .project-details-container {
+    margin-top: 0px;
+  }
 
   pd-titles .colored-title {
     font-size: 1.3rem;

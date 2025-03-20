@@ -11,23 +11,52 @@ const PQwesteo = () => {
   const solutionText =
     'Le premier projet sur lequel j\'ai travaillé fut l’application mobile Qwesteo. J’ai ainsi pu proposer un nouveau design plus épuré et moderne à cette application. Qwesteo m’a permis de faire de nouvelles propositions au sujet de nouvelles fonctionnalités à mettre en place pour cette application. J’ai changé l’intégralité des icônes, les couleurs principales (couleurs plus pastel et à la mode), ainsi que l’UX/UI de l’application. \n \n Mon second projet, fut de réaliser seul, un nouveau site internet pour la marque, le précédent possédant un design vieillissant. Le logo de la marque étant réutilisé sur tous les supports de communication, mais également directement sur les bornes, il était important de le garder tel quel. Pour moi, le site internet, mais également tous les supports représentant la marque Qwesteo devaient reprendre l’esthétisme du logo. C’est dans cette optique que j’ai décidé de faire un rappel de ce logo en utilisant des dégradés de bleu dans tout le site. Un rappel au logo sera également présent sous la forme de double cercles (un gris et un avec un dégradé bleu), faisant écho à la lettre "Q" du logo. \n \n Qwesteo possède 3 sous-branches, chacune à l’image d’un certain secteur d’activité (commerce, service et santé). J’ai décidé d’associer à chaque secteur, des couleurs et un dégradé en variation de bleu, dans le but de différencier chaque branche des autres, tout en conservant une cohésion et une cohérence globale. \n \n J’ai, par la suite, travaillé sur le design et le développement de nouveaux rapports à destination des clients. Chaque projet de design était suivi d’une phase de développement (code) pour réaliser les différents projets. Avoir eu l’occasion de recréer tout une image de marque pour toute l’entreprise a été réellement intéressant et passionnant.';
 
-  const photos = [
-    "../../assets/images/app-challenge/image-1.jpg",
-    "../../assets/images/app-challenge/image-1.jpg",
-    "../../assets/images/app-challenge/image-1.jpg",
-    "../../assets/images/app-challenge/image-1.jpg",
-    "../../assets/images/app-challenge/image-1.jpg",
-    "../../assets/images/app-challenge/image-1.jpg",
-    "../../assets/images/app-challenge/image-1.jpg",
-    "../../assets/images/app-challenge/image-1.jpg",
-    "../../assets/images/app-challenge/image-1.jpg",
-    "../../assets/images/app-challenge/image-1.jpg",
-  ];
+    const galleryPhotos = [
+      "../../assets/images/app-challenge/image-1.jpg",
+      "../../assets/images/app-challenge/image-1.jpg",
+      "../../assets/images/app-challenge/image-1.jpg",
+      "../../assets/images/app-challenge/image-1.jpg",
+      "../../assets/images/app-challenge/image-1.jpg",
+      "../../assets/images/app-challenge/image-1.jpg",
+      "../../assets/images/app-challenge/image-1.jpg",
+      "../../assets/images/app-challenge/image-1.jpg",
+      "../../assets/images/app-challenge/image-1.jpg",
+      "../../assets/images/app-challenge/image-1.jpg",
+    ];
+  
+    const lightboxPhotos = [
+      {
+        src: "../../assets/images/qwesteo/qwesteo-full-main-page.png",
+        title: "Page principale",
+        description: "Page principale",
+        column: 1,
+      },
+      {
+        src: "../../assets/images/qwesteo/qwesteo-full-service-page.png",
+        title: "Page de connexion",
+        description: "Page de service",
+        column: 2,
+      },
+      {
+        src: "../../assets/images/qwesteo/qwesteo-full-commerce-page.png",
+        title: "Page d'actualités",
+        description: "Page de commerce",
+        column: 1,
+      },
+      {
+        src: "../../assets/images/qwesteo/qwesteo-full-sante-page.png",
+        title: "Page d'actualités",
+        description: "Page de sante",
+        column: 2,
+      },
+    ];
 
   const childProps = {
-    coloredMainTitle: "Réalisé pour Qwesteo",
-    mainTitle: "Produits Qwesteo",
+    coloredMainTitle: "Entreprise Qwesteo",
+    mainTitle: "Qwesteo",
+    isThereAVideo: true,
     presentationVideo: qwesteoVideo,
+    presentationImage: "../../assets/images/qwesteo/project-details-main-image.png",
     clientName: "Qwesteo",
     technologies: [
       "Figma",
@@ -43,7 +72,9 @@ const PQwesteo = () => {
     needs: needsText,
     solutionImage: rightImg,
     solution: solutionText,
-    photos: photos,
+    isThereMobileMockup: false,
+    galleryPhotos: galleryPhotos,
+    lightboxPhotos: lightboxPhotos,
   };
 
   return (

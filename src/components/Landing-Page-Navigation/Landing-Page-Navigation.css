@@ -32,6 +32,7 @@
 	margin-bottom: 9px;
 	border-radius: 50%;
 	background-color: #3a3a3c;
+	cursor: pointer;
 }
 
 .navigation-dots ul .active-dot {
