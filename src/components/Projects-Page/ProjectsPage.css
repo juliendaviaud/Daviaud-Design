@@ -191,16 +191,23 @@
 }
 
 @media screen and /* (min-width: 481px) and */ (max-width: 1024px) {
-  .projectListed {
-    margin-right: 85px;
-  }
 
   .projectListedNoMarginRight {
     margin-right: 0;
   }
 
+  .projectListedImageContainer {
+    width: auto;
+  }
+
+  .projectListedImageLink {
+    width: auto;
+    justify-content: start;
+  }
+
   .projectListedImage {
-    height: 160px;
+    height: 220px;
+    width: auto;
   }
 }
 
@@ -219,7 +226,12 @@
     margin-bottom: 0;
   }
 
+  .projectListedImageLink {
+    margin-right: 0;
+  }
+
   .projectListedImage {
-    height: 160px;
+    width: 400px;
+    height: 300px;
   }
 }
