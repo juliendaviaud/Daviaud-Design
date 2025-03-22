@@ -192,7 +192,7 @@ const Landing = () => {
             </div>
             <Link rel="" type="" to="/mes-realisations">
               <button className="gradient-button presentation-text-section-gradient-button">
-                Voir toutes mes réalisations
+                Voir mes réalisations
               </button>
             </Link>
           </div>

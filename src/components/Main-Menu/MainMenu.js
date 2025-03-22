@@ -79,7 +79,7 @@ const MainMenu = ({isAbsolute}) => {
         <div ref={refNavLinks} className="nav-links nav-links-mobile">
           <ul>
             <li>
-              <Link to="/#projects" onClick={openCloseBurgerMenu}>Réalisations</Link>
+              <Link to="/mes-realisations" onClick={openCloseBurgerMenu}>Réalisations</Link>
             </li>
             <li>
               <Link to="/#pricesPacks" onClick={openCloseBurgerMenu}>Prix</Link>
