@@ -185,7 +185,7 @@ const Landing = () => {
                 allient design soigné et performance technique. Que vous
                 souhaitiez acheter un site pour un projet durable ou
                 louer un site pour disposer rapidement d’une solution clé en
-                main, je m’adapte à votre rythme et à vos objectifs. Avec moi,
+                main, je m’adapte à votre rythme et à vos objectifs.<br /><br />Avec moi,
                 vous bénéficiez d’un accompagnement personnalisé pour booster
                 votre présence en ligne en toute simplicité.
               </p>
