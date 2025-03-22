@@ -5,6 +5,7 @@ import { Link as NavigationLinkScroll } from "react-scroll";
 const LandingPageNavigation = () => {
   const [linkTable, setlinkTable] = useState([
     "#landing",
+    "#service-description",
     "#reliability",
     "#projects",
     "#pricesPacks",
@@ -29,26 +30,31 @@ const LandingPageNavigation = () => {
     },
     {
       id: 1,
+      name: "Service Description",
+      key: "service-description",
+    },
+    {
+      id: 2,
       name: "Three Arguments",
       key: "reliability",
     },
     {
-      id: 2,
+      id: 3,
       name: "Projects",
       key: "projects",
     },
     {
-      id: 3,
+      id: 4,
       name: "Prices Packs",
       key: "pricesPacks",
     },
     {
-      id: 4,
+      id: 5,
       name: "Skills",
       key: "skills",
     },
     {
-      id: 5,
+      id: 6,
       name: "Contact",
       key: "contact",
     },

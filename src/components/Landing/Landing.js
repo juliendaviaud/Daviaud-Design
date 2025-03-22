@@ -168,7 +168,7 @@ const Landing = () => {
           </div>
         </div>
         <LandingPageNavigation />
-        <div id="projects" className="fourth-section space-between-sections">
+        <div id="service-description" className="fourth-section space-between-sections">
           <div className="fos-container">
             <div className="title-container presentation-text-section-title">
               <h3 className="colored-title">Chapitre 1</h3>
