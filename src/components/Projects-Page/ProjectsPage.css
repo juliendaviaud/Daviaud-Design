@@ -211,7 +211,7 @@
   }
 }
 
-@media screen and /* (min-width: 481px) and */ (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .projectsListRow {
     flex-direction: column;
   }
@@ -234,4 +234,20 @@
     width: 400px;
     height: 300px;
   }
+}
+
+@media screen and (max-width: 480px) {
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .colored-title {
+    font-size: 1.25rem;
+  }
+
+  .projectListedImage {
+    width: 300px;
+    height: auto;
+}
 }
